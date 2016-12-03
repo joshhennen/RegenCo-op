@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title>{{ page.title }}</title>
-	<!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="{{ site.github.url }}/css/main.css">
-</head>
+{% include top.html %}
 
 <body>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-		</ul>
-	</nav>
-	<div class="container">
+	
+	{% include header.html %}
+
+	<div id="content">
 
 		{{ content }}
 
 	</div>
-	<footer>
-		<ul>
-			<li><a href="https://github.com/RegenCo-op">github.com/RegenCo-op</a></li>
-		</ul>
-	</footer>
+	
+	{% include footer.html %}
+
 </body>
 
 </html>
