@@ -1,1 +1,7 @@
-name:Regen Co-op
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
