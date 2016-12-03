@@ -1,7 +1,9 @@
-body {
-    margin: 60px auto;
-    width: 100%;
+
+.article img, .article span{
+    width: auto !important;
+    height: auto !important;
 }
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -43,5 +45,5 @@ ul.posts li {
 }
 
 .black{
-    border: 2px solid gold;
+    border: 2px solid black;
 }
