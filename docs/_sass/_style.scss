@@ -1,7 +1,7 @@
 
 .article img, .article span{
-    width: inherit !important;
-    height: inherit !important;
+    max-width: 100% !important;
+    height: auto !important;
 }
 
 nav ul, footer ul {
