@@ -1,2 +1,6 @@
+collections:
+    articles:
+        output: true
+
 sass:
     sass_dir: _sass

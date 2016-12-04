@@ -1,0 +1,12 @@
+# To add a new article or category, use the following format
+# (ignore the '#' symbol, but keep in mind the spaces and dashes)
+- category: My First Category!
+  article_permalinks:
+  - Why-you-do-dat
+  - Testing-for-special-characters!!!
+  - My-Fifth-Article
+
+- category: My Second Category!
+  article_permalinks:
+  - My-Third-Article
+  - fourth_art_link
