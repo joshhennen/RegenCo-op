@@ -1,3 +1,16 @@
-<div>
-    Hello!
-</div>
+<nav class="sidebar">
+    {% for category in site.data.article_layout %}
+        <label>
+            <h4>{{ category.category }}</h4>
+            {% assign curr_permalink = page.url | remove_first: "/articles/" %}
+            <input type="radio" name="sidebar" {% if category.article_permalinks contains curr_permalink %}checked{% endif %}>
+            <ul>
+                {% for permalink in category.article_permalinks %}
+                    {% assign article_url = permalink | prepend:"/articles/" %}
+                    {% assign p = site.articles | where:"url", article_url | first %}
+                    <li class="{% if article_url == page.url %}current{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </label>
+    {% endfor %}    
+</nav>
