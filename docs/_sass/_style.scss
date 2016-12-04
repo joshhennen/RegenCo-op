@@ -1,14 +1,52 @@
+/* Background */
 
-/* Article editing */
+html {
+    background: url(/images/sky-bg.png) no-repeat center fixed;
+    background-size: 100% 100%;
+}
 
-.article img, .article span{
+
+/* Articles */
+
+div.article::before{
+    z-index: 1;
+    box-shadow: -15px 0 20px -15px rgba(0, 28, 120, 0.9) inset;
+    content: " ";
+    height: 100%;
+    left: -20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+
+div.article::after{
+    z-index: 4;
+    box-shadow: 15px 0 20px -15px rgba(0, 28, 120, 0.9) inset;
+    content: " ";
+    height: 100%;
+    right: -20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+
+div.article {
+    position:relative;
+    background: rgba(163, 220, 243, 1);
+    
+    img, span{
     max-width: 100% !important;
     height: auto !important;
+    }
 }
+
+
 
 /* Sidebar */
 
 .sidebar {
+    position: relative;
+    z-index: 99;
     label {
         float:left;
         margin:4px;
@@ -26,7 +64,7 @@
             display: none;
         }
 
-        input:hover ~ ul {
+        input:checked ~ ul {
             display: block;
         }
     }
