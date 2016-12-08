@@ -102,6 +102,12 @@
   .hide-on-mobiles {
     display: none !important;
   }
+  .invert-on-mobiles {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
 }
 
 /* Expand the wrap a bit further on larger screens */

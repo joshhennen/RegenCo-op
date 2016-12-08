@@ -2,7 +2,7 @@
 
 /* Articles */
 
-div.article::before{
+article::before{
     z-index: 1;
     box-shadow: -15px 0 20px -15px rgba(0, 28, 120, 0.9) inset;
     content: " ";
@@ -13,7 +13,7 @@ div.article::before{
     width: 20px;
 }
 
-div.article::after{
+article::after{
     z-index: 4;
     box-shadow: 15px 0 20px -15px rgba(0, 28, 120, 0.9) inset;
     content: " ";
@@ -24,7 +24,7 @@ div.article::after{
     width: 20px;
 }
 
-div.article {
+article {
     position:relative;
     background: rgba(163, 220, 243, 1);
     
@@ -58,7 +58,7 @@ div.article {
             display: none;
         }
 
-        input:checked ~ ul {
+        input:hover ~ ul {
             display: block;
         }
     }
