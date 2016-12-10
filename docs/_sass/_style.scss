@@ -28,6 +28,7 @@ body{
     background: $main-brown;
     position: relative;
     top: 56px; /* Offset for navbar at top*/
+    overflow-x: hidden;
 }
 
 /* Logo */
@@ -291,7 +292,6 @@ body { -webkit-animation: bugfix infinite 1s; }
                     overflow-x: auto;
                     overflow-y: hidden;
                     white-space: nowrap;
-                    text-overflow: ellipsis;
                 }
             }
         }
