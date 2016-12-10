@@ -6,6 +6,14 @@
   display: flex;
 }
 
+@mixin flex-align($value){
+    -webkit-box-align: $value;
+    -moz-box-align: $value;
+    -ms-flex-align: $value;
+    -webkit-align: $value;
+    align-items: $value;
+}
+
 @mixin flex($values...) {
   -webkit-box-flex: $values;
   -moz-box-flex:  $values;

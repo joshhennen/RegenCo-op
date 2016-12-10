@@ -2,9 +2,10 @@
 
     <div class="menubar">
         <div class="page-title">
-            <div>
-                <span>{% if page.title %}{{ page.title }}{% else %}Regen Co-op{% endif %}</span>
-            </div>
+            {% if page.title %}{{ page.title }}{% else %}<b>R</b>enewable <b>E</b>nergy <b>Gen</b>eration <b>Co-op</b>erative{% endif %}
+            <!--<div>
+                <span></span>
+            </div>-->
         </div>
         <a href="#" class="icon-box">
             <div class="top-icon"></div>
