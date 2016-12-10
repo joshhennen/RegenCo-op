@@ -69,6 +69,7 @@ article {
 
     /* Shadow */
     &:after, &:before{
+        display: none;
         z-index: 1;
         content: "";
         height: 100%;        
