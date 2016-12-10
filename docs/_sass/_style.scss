@@ -102,14 +102,16 @@ body { -webkit-animation: bugfix infinite 1s; }
     .menubar{
         $menubar-background: $dark-teal;
         $menubar-foreground: $main-gold;
+        @include flexbox();
         position: fixed;
         z-index: 3;
         top:0;
         left:0;
         height:56px;
         width:100%;
-        @include box-shadow(1px 1px 4px 1px black);        
+        @include box-shadow(1px 1px 4px 1px black);
         .page-title{
+            @include flex(1);
             height: 100%;
             background: $menubar-background;
             overflow-y: auto;
@@ -125,8 +127,8 @@ body { -webkit-animation: bugfix infinite 1s; }
             }
         }
         .icon-box{
+            display: inherit;
             position: relative;
-            float:right;
             height:100%;
             width:56px;
             padding: 16px;
