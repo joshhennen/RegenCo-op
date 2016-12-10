@@ -110,7 +110,7 @@ body { -webkit-animation: bugfix infinite 1s; }
         $menubar-background: $dark-teal;
         $menubar-foreground: $main-gold;
         @include flexbox();
-        @include flex-align(center);
+        /*@include flex-align(center);*/
         position: fixed;
         z-index: 3;
         top:0;
@@ -121,6 +121,7 @@ body { -webkit-animation: bugfix infinite 1s; }
         @include box-shadow(1px 1px 4px 1px black);
         .page-title{
             @include flex(1);
+            color: $light-gold;
             max-height: 100%;
             overflow-y: auto;
         }
