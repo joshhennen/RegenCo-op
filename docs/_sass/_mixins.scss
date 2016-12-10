@@ -6,7 +6,7 @@
   display: flex;
 }
 
-@mixin flex($values) {
+@mixin flex($values...) {
   -webkit-box-flex: $values;
   -moz-box-flex:  $values;
   -webkit-flex:  $values;
@@ -14,10 +14,16 @@
   flex:  $values;
 }
 
-@mixin order($val) {
+@mixin order($val...) {
   -webkit-box-ordinal-group: $val;  
   -moz-box-ordinal-group: $val;     
   -ms-flex-order: $val;     
   -webkit-order: $val;  
   order: $val;
+}
+
+@mixin box-shadow($values...) {
+    -moz-box-shadow: $values;
+    -webkit-box-shadow: $values;
+    box-shadow: $values;
 }
