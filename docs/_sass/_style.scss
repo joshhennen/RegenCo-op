@@ -32,7 +32,6 @@ body{
     position: relative;
     top: 56px; /* Offset for navbar at top*/
     width: 100%;
-    position: relative;
     overflow: hidden;
 }
 
@@ -40,6 +39,7 @@ body{
 header{
     div {
         position:relative;
+        top:56px; /* Offset for navbar at top*/
         background-image: url(/images/logo.png);
         background-size: contain;
         background-repeat: no-repeat;
