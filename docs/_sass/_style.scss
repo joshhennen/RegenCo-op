@@ -28,7 +28,12 @@ body{
     background: $main-brown;
     position: relative;
     top: 56px; /* Offset for navbar at top*/
-    overflow-x: hidden;
+}
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Logo */
