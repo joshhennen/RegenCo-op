@@ -26,11 +26,11 @@ html {
 /* Body */
 body{
     background: $main-brown;
-    position: relative;
-    top: 56px; /* Offset for navbar at top*/
 }
 
 #wrapper {
+    position: relative;
+    top: 56px; /* Offset for navbar at top*/
     width: 100%;
     position: relative;
     overflow: hidden;
