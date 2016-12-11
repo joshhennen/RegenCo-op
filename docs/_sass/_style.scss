@@ -120,26 +120,18 @@ body { -webkit-animation: bugfix infinite 1s; }
         background: $menubar-background;
         @include box-shadow(1px 1px 4px 1px black);
         .page-title{
-            @include flex(1 1 auto);
-            min-width: 0;
+            @include flex(1);
             color: $light-gold;
             max-height: 100%;
-            max-width: 100%;
             overflow-y: auto;
-            span{
-                display: block;
-                height: 100%;
-                width: 100%;
-                overflow-x: hidden;
-                overflow-y: auto;
-            }
+            min-width: 0;
         }
         .icon-box{
             @include flex(0 0 auto);
             display: inherit;
             position: relative;
             height:100%;
-            width:56px;
+            min-width:56px;
             padding: 16px;
         }
         .home-icon{
