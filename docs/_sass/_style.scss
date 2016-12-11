@@ -135,6 +135,7 @@ body { -webkit-animation: bugfix infinite 1s; }
             }
         }
         .icon-box{
+            @include flex(0 0 auto);
             display: inherit;
             position: relative;
             height:100%;
