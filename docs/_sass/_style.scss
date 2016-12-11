@@ -121,6 +121,7 @@ body { -webkit-animation: bugfix infinite 1s; }
         @include box-shadow(1px 1px 4px 1px black);
         .page-title{
             @include flex(1);
+            overflow: hidden;
             color: $light-gold;
             max-height: 100%;
             overflow-y: auto;
