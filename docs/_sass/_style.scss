@@ -120,7 +120,7 @@ body { -webkit-animation: bugfix infinite 1s; }
         background: $menubar-background;
         @include box-shadow(1px 1px 4px 1px black);
         .page-title{
-            @include flex(1 0 0);
+            @include flex(1 0 auto);
             color: $light-gold;
             max-height: 100%;
             overflow: auto;
