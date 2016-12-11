@@ -124,7 +124,13 @@ body { -webkit-animation: bugfix infinite 1s; }
             min-width: 0;
             color: $light-gold;
             max-height: 100%;
+            max-width: 100%;
             overflow-y: auto;
+            span{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         .icon-box{
             display: inherit;
