@@ -1,5 +1,32 @@
-<header class="grid">
-    <div>
+<header class="">
+
+    <div class="menubar">
+        <nav>
+            <div class="icon-box">
+                <div class="menu-icon"></div>
+            </div>
+            <a href="/" class="icon-box">
+                <div class="home-icon"></div>
+            </a>
+            <a href="#" class="icon-box">
+                <div class="top-icon"></div>
+            </a>
+        </nav>
+        <div class="page-category">
+            <div>
+                <span>
+                    {% assign curr_permalink = page.url | remove_first: "/articles/" %}
+                    {% capture page-category %} <b>R</b>enewable <b>E</b>nergy <b>Gen</b>eration <b>Co-op</b>erative {% endcapture %}
+                    {% for category in site.data.article_layout %}
+                        {% if category.article_permalinks contains curr_permalink %} {% assign page-category = category.category %}{% endif %}
+                    {% endfor %}
+                    {{page-category}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="logo-wrapper">
         <a href="/" id="logo"></a>
     </div>
 </header>
