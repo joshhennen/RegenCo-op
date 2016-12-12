@@ -1,3 +1,4 @@
+/***** Colors *****/
 $variation : 30%;
 $main-blue : hsla(205, 100%, 56.5%, 1);
 $light-blue : lighten($main-blue, $variation);
@@ -15,26 +16,34 @@ $main-gold : hsla(51, 72%, 42%, 1);
 $light-gold : lighten($main-gold, $variation);
 $dark-gold : darken($main-gold, $variation);
 
-/* Body */
+/***** Variables *****/
+$menubar-height: 56px;
+
+
+/***** Body *****/
 body{
+    margin: 0 auto;
+    max-width: 999px;
     background: $main-brown;
 }
 
 #wrapper {
     position: relative;
-    top: 56px; /* Offset for menubar at top*/
+    top: $menubar-height; /* Offset for menubar at top*/
     width: 100%;
     overflow: hidden;
 }
 
 
-/* Header & top menubar */
+/***** Header & Menubar *****/
 header{
     position: relative;
     
-    #logo-wrapper {
+    #logo-wrapper{
+        padding:10px;
+    }
+    #logo-picture {
         position:relative;
-        top:56px; /* Offset for menubar at top*/
         background-image: url(/images/logo.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -42,16 +51,18 @@ header{
         height: 0;
         padding-top: 459px / 1180px * 100%; /* (img-height / img-width * container-width) */
     }
-
-    #logo{
+    #logo-link{
         position:absolute;
         top:0;
         width: 100%;
         height: 100%;
+         /* Hide the text. */
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
 
-$menubar-height: 56px;
 .menubar{
     $menubar-background: $dark-teal;
     $menubar-foreground: $main-gold;
@@ -175,9 +186,7 @@ $menubar-height: 56px;
     }
 }
 
-
-/* Articles */
-
+/***** Articles *****/
 article {
     position:relative;
     background: $light-blue;
@@ -210,13 +219,7 @@ article {
     }
 }
 
-
-
-
-/* Sidebar */
-
-
-
+/***** Sidebar *****/
 .sidebar {
     position: relative;
 
