@@ -1,17 +1,21 @@
 <nav class="sidebar">
 
     <div class="menubar">
-        <div class="page-title">
-            {% if page.title %}{{ page.title }}{% else %}<b>R</b>enewable <b>E</b>nergy <b>Gen</b>eration <b>Co-op</b>erative{% endif %}
+        <div class="icon-box">
+            <div class="menu-icon"></div>
         </div>
-        <a href="#" class="icon-box">
-            <div class="top-icon"></div>
-        </a>
         <a href="/" class="icon-box">
             <div class="home-icon"></div>
         </a>
-        <div class="icon-box">
-            <div class="menu-icon"></div>
+        <a href="#" class="icon-box">
+            <div class="top-icon"></div>
+        </a>
+        <div class="page-title">
+            <div>
+                <span>
+                    {% if page.title %}{{ page.title }}{% else %}<b>R</b>enewable <b>E</b>nergy <b>Gen</b>eration <b>Co-op</b>erative{% endif %}
+                </span>
+            </div>
         </div>
     </div>
 

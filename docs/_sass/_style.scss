@@ -111,8 +111,6 @@ body { -webkit-animation: bugfix infinite 1s; }
         $menubar-background: $dark-teal;
         $menubar-foreground: $main-gold;
         $icon-size: $menubar-height/7*3;
-        @include flexbox();
-        @include flex-align(center);
         position: fixed;
         z-index: 3;
         top:0;
@@ -122,14 +120,22 @@ body { -webkit-animation: bugfix infinite 1s; }
         background: $menubar-background;
         @include box-shadow(1px 1px 4px 1px black);
         .page-title{
-            @include flex(1);
-            color: $light-gold;
-            max-height: 100%;
-            overflow: auto;
-            padding: 0.25em;            
+            height: 100%;
+            overflow-y: auto;
+            padding: 3px 0 3px 3px;
+            div{
+                 height: 100%;
+                 display: table;
+                 span{
+                     color: $text-color;
+                     display: table-cell;
+                     vertical-align: middle;
+                 }
+            }
         }
         .icon-box{
             display: inherit;
+            float:right;
             position: relative;
             height:100%;
             width:$menubar-height;
