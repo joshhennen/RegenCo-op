@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Checkbox hack by Tim Pietrusky:
+ * pseudo-class + general/adjacent sibling doesn't work
+ * on Android <= 4.1.2 so we need a hack:
+ *
+ * A useless animation :D
+ */
+body { -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }

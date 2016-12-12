@@ -15,14 +15,6 @@ $main-gold : hsla(51, 72%, 42%, 1);
 $light-gold : lighten($main-gold, $variation);
 $dark-gold : darken($main-gold, $variation);
 
-
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 /* Body */
 body{
     background: $main-brown;
@@ -59,7 +51,6 @@ header{
     }
 }
 
-$text-color: $light-gold;
 $menubar-height: 56px;
 .menubar{
     $menubar-background: $dark-teal;
@@ -81,7 +72,7 @@ $menubar-height: 56px;
                 height: 100%;
                 display: table;
                 span{
-                    color: $text-color;
+                    color: $light-gold;
                     display: table-cell;
                     vertical-align: middle;
                 }
@@ -224,14 +215,7 @@ article {
 
 /* Sidebar */
 
-/* Checkbox hack by Tim Pietrusky:
- * pseudo-class + general/adjacent sibling doesn't work
- * on Android <= 4.1.2 so we need a hack:
- *
- * A useless animation :D
- */
-body { -webkit-animation: bugfix infinite 1s; }
-@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }
+
 
 .sidebar {
     position: relative;
@@ -294,7 +278,7 @@ body { -webkit-animation: bugfix infinite 1s; }
                 display: block;
                 height:56px;       
                 span{
-                    color: $text-color;
+                    color: $light-gold;
                     display: block;
                     height: 100%;
                     width: 100%;
@@ -336,7 +320,7 @@ body { -webkit-animation: bugfix infinite 1s; }
 /* Make article take up 2/3, and sidebar 1/3 */
 @media only screen and (min-width: 601px){
 
-    
+
 
 
 }
