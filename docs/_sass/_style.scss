@@ -89,10 +89,13 @@ header{
                 }
         }
     }
-    .icon-box{
-        display: inherit;
+    nav {
+        height: 100%;
+        width: auto;
         float:right;
-        position: relative;
+    }
+    .icon-box{
+        float:right;
         height:100%;
         width:$menubar-height;
         padding: $menubar-height/7*2;
