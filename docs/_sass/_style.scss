@@ -192,34 +192,53 @@ header{
 /***** Articles *****/
 article {
     position:relative;
-    background: $light-blue;
-    
+    margin: 0 5px;
+
     img, span{
-    max-width: 100% !important;
-    height: auto !important;
+        max-width: 100% !important;
+        height: auto !important;
     }
 
-    /* Shadow */
-    &:after, &:before{
-        display: none;
-        
-        content: "";
-        height: 100%;        
-        width: 20px;
-        position: absolute;
-        top: 0;
+    .title-banner{
+        position: relative;
+        font-size: 1.5em;
+        text-align: center;
+        color: $light-gold;
+        background: $dark-teal;
+        padding: 3px 5px;
+        @include box-shadow(0 5px 7px -2px black);
+        &:before{
+            /* Bottom left triangle */
+            content: "";
+            z-index: -1;
+            position: absolute;
+            left:0;
+            bottom: -30px;
+            height:0;
+            width:0;
+            border-top: 30px solid $dark-green;
+            border-left: 10px solid transparent;
+        }
+        &:after{
+            /* Bottom right triangle */
+            content: "";
+            z-index: -1;
+            position: absolute;
+            right:0;
+            bottom: -30px;
+            height:0;
+            width:0;
+            border-top: 30px solid $dark-green;
+            border-right: 10px solid transparent;
+        }
     }
 
-    $shadow-color: $dark-blue;
-    &:before{
-        left: -20px;
-        box-shadow: -15px 0 20px -15px $shadow-color inset;
+    .content{
+        margin:0 10px;
+        padding:5px 5px;
+        background: $light-blue;
     }
 
-    &:after{
-        right: -20px;
-        box-shadow: 15px 0 20px -15px $shadow-color inset;
-    }
 }
 
 /***** Sidebar *****/

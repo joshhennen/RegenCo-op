@@ -1,8 +1,18 @@
---- 
-layout: default 
+---
+layout: default
 ---
 
-	<article>
+<article>
+	<div class="title-banner">
+		{% if page.title %}
+			{{page.title}}
+		{% else %}
+			<b>R</b>enewable <b>E</b>nergy <b>GEN</b>eration <b>Co-op</b>erative
+		{% endif %}
+	</div>
+	<div class="content">
 		{{ content }}
-	</article>
-	{% include sidebar.html %}
+	</div>
+</article>
+
+{% include sidebar.html %}
