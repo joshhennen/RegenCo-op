@@ -1,20 +1,25 @@
 <nav class="sidebar">
-    <label for="menu-button" id="menu-toggle"></label>
-    <input id="menu-button" type="checkbox">
-    <div class="categories">
-        {% for category in site.data.article_layout %}
-        <label for="check{{ forloop.index }}" onlick class="category">
-            <div><span>{{ category.category }}</span></div>
-        </label>
-        {% assign curr_permalink = page.url | remove_first: "/articles/" %}
-        <input id="check{{ forloop.index }}" type="checkbox" name="sidebar" {% if category.article_permalinks contains curr_permalink %}checked{% endif %}>
-        <ul class="links">
-            {% for permalink in category.article_permalinks %}
-                {% assign article_url = permalink | prepend:"/articles/" %}
-                {% assign p = site.articles | where:"url", article_url | first %}
-                <a href="{{ p.url }}"><li class="{% if article_url == page.url %}current{% endif %}">{{ p.title }}</li></a>
+    <div class="title-banner-wrapper">
+        <div class="title-banner">
+            Topics
+        </div>
+        <label for="menu-button" id="menu-toggle"></label>
+        <input id="menu-button" type="checkbox">
+        <div class="categories">
+            {% for category in site.data.article_layout %}
+            <label for="check{{ forloop.index }}" onlick class="category">
+                <div><span>{{ category.category }}</span></div>
+            </label>
+            {% assign curr_permalink = page.url | remove_first: "/articles/" %}
+            <input id="check{{ forloop.index }}" type="checkbox" name="sidebar" {% if category.article_permalinks contains curr_permalink %}checked{% endif %}>
+            <ul class="links">
+                {% for permalink in category.article_permalinks %}
+                    {% assign article_url = permalink | prepend:"/articles/" %}
+                    {% assign p = site.articles | where:"url", article_url | first %}
+                    <a href="{{ p.url }}"><li class="{% if article_url == page.url %}current{% endif %}">{{ p.title }}</li></a>
+                {% endfor %}
+            </ul>
             {% endfor %}
-        </ul>
-        {% endfor %}
-    </div>    
+        </div>   
+    </div> 
 </nav>
