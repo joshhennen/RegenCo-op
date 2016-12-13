@@ -266,7 +266,7 @@ article {
 
     .categories{
         $category-color: $dark-green;
-        position:fixed;
+        position: fixed;
         z-index: 2;
         top:56px;
         bottom: 0;
@@ -277,8 +277,10 @@ article {
 
         label{
             position: relative;
-            float:left;
+            display: block;
+            min-height: 56px;
             width:100%;
+            overflow-y: auto;
             text-align: center;
 
             &:after{
@@ -294,25 +296,18 @@ article {
 
             &:not(:last-of-type) div{
                 border-bottom: 1px dashed $main-gold;
-            }     
-            div {
-                position: relative;
+            }
+            div{
+                padding: 3px;
                 z-index: 2;
-                padding: 0 5px;
+                width: 100%;
+                height: 56px;
+                display: table;
                 background:$dark-green;
-                display: block;
-                height:56px;       
                 span{
                     color: $light-gold;
-                    display: block;
-                    height: 100%;
-                    width: 100%;
-                    line-height: 56px;
-                    font-size: 1.2em;
+                    display: table-cell;
                     vertical-align: middle;
-                    overflow-x: auto;
-                    overflow-y: hidden;
-                    white-space: nowrap;
                 }
             }
         }
@@ -343,9 +338,33 @@ article {
 /* Remove top menubar to the side */
 /* Move to-top icon to lower right corner */    
 /* Make article take up 2/3, and sidebar 1/3 */
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 600px){
 
+    #wrapper{
+        top:0;
+    }
 
+    .menubar{
+        display: none;
+    }
 
+    .center-row{
+        clear: both;
+    }
+
+    article{
+        float: left;
+        width: 66.6665%;
+    }
+
+    .sidebar{
+        #menu-toggle{
+            display: none;
+        }
+        .categories{
+            display: block;
+            position: static;
+        }
+    }
 
 }
