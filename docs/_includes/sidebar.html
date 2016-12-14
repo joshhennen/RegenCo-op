@@ -1,10 +1,23 @@
-<nav class="sidebar content-wrapper right">
-    <div class="title-banner">
-        Topics
-    </div>
+<nav class="sidebar content-wrapper right">    
     <label for="menu-button" id="menu-toggle"></label>
     <input id="menu-button" type="checkbox">
-    <div class="categories">
+    
+    <!--General information links-->
+    <div class="title-banner">
+        General Info
+    </div>
+    <div class="categories title-banner-content">
+        <ul class="links">
+            <a href="contact"><li class="{% if article_url == page.url %}current{% endif %}">Contact Us</li></a>
+            <a href="about"> <li class="{% if article_url == page.url %}current{% endif %}">About Us</li></a>
+        </ul>
+    </div>
+    
+    <!--Categories with articles-->
+    <div class="title-banner">
+        Articles
+    </div>
+    <div class="categories title-banner-content">
         {% for category in site.data.article_layout %}
         <label for="check{{ forloop.index }}" onlick class="category">
             <div><span>{{ category.category }}</span></div>
@@ -20,4 +33,5 @@
         </ul>
         {% endfor %}
     </div>
+
 </nav>

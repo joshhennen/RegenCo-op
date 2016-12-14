@@ -15,7 +15,7 @@ $dark-teal : darken($main-teal, $variation);
 $main-gold : hsla(51, 72%, 42%, 1);
 $light-gold : lighten($main-gold, $variation);
 $dark-gold : darken($main-gold, $variation);
-
+$selected-color : lighten($main-gold, 15%);
 /***** Variables *****/
 $menubar-height: 56px;
 
@@ -67,7 +67,7 @@ header{
     $menubar-foreground: $main-gold;
     $icon-size: $menubar-height/7*3;
     position: fixed;
-    z-index: 3;
+    z-index: 1;
     top:0;
     left:0;
     height:$menubar-height;
@@ -95,10 +95,10 @@ header{
     }
     @at-root .icon-box{
         float:right;
-        height:100%;
+        height:56px;
         width:$menubar-height;
         padding: $menubar-height/7*2;
-            &.home>div{
+        &.home>div{
             $house-color: $menubar-foreground;
             /* roof */
             position: relative;
@@ -158,7 +158,7 @@ header{
             $top-color: $menubar-foreground;
             /* arrowhead */
             position: relative;
-            left:$icon-size/4;
+            left:$icon-size/6;
             width:0;
             height:0;
             border-left:$icon-size/3 solid transparent;
@@ -243,8 +243,13 @@ article {
 
 /***** Sidebar *****/
 .sidebar {
-    position: relative;
+    position: fixed;
+    top:56px;
+    bottom: 0;
+    left:0;
+    right:0;
     overflow: auto;
+    z-index: 2;
 
     .title-banner{
         display: none;
@@ -259,24 +264,20 @@ article {
 
     label#menu-toggle{
         position:fixed;
-        z-index: 4;
+        //z-index: 4;
         top:0;
         right:0;
         height:56px;
         width:56px;
-        &+input:checked + .categories {
+        &+input:checked ~ .categories {
             display: block;
         }
     }
 
     .categories{
         $category-color: $dark-green;
-        position: fixed;
-        z-index: 2;
-        top:56px;
-        bottom: 0;
-        left:0;
-        right:0;
+        position: relative;
+        //z-index: 2;
         overflow: auto;
         display: none;
 
@@ -288,7 +289,7 @@ article {
             text-align: center;
 
             &:after{
-                z-index: 1;
+                //z-index: 1;
                 content:'';
                 position: absolute;
                 left:0;
@@ -304,7 +305,7 @@ article {
             div{
                 position: relative;
                 padding: 3px;
-                z-index: 2;
+                //z-index: 2;
                 width: 100%;
                 height: 56px;
                 display: table;
@@ -330,11 +331,16 @@ article {
             list-style: none;
             background:indigo;
             display: none;
-            z-index: 0;
+            //z-index: 0;
             li {
                 position: relative;
                 padding: 7px 5px;
                 background: $light-gold;
+                &.current{                    
+                    border-top: 2px dotted $main-gold;
+                    border-bottom: 2px dotted $main-gold;
+                    background: $selected-color;
+                }
             }
         }
     }
@@ -370,7 +376,12 @@ article {
             display: none;
         }
         .top{
-            
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            border-radius: 50%;
+            background: $dark-teal;
+            @include box-shadow( 1px 1px 4px 0 $dark-brown);
         }
     }
 
@@ -380,18 +391,23 @@ article {
     }
 
     .sidebar{
+        display: block;
+        position: static;
         #menu-toggle{
             display: none;
         }
         .title-banner{
             display: block;
         }
+        .title-banner-content{
+            padding: 0 10px;
+        }
+
         .categories{
             display: block;
             position: static;
-            padding: 0 10px;
             &>label:first-of-type:before{
-                z-index: 3;
+                //z-index: 3;
                 content:'';
                 position: absolute;
                 left:0;
@@ -401,16 +417,24 @@ article {
                 @include box-shadow(0 10px 5px -8px black inset);
             }
 
-            li.current:after{
-                content:'';
-                position: absolute;
-                left:-10px;
-                top:0;
-                width:0;
-                height:0;
-                border-top: 1em solid transparent;
-                border-bottom: 1em solid transparent;
-                border-right: 10px solid $light-gold;
+            li.current{
+                &:after, &:before{
+                    content:'';
+                    position: absolute;
+                    left:-10px;
+                    width:0;
+                    height:0;
+                }
+                &:before{
+                    bottom:50%;                    
+                    border-top: 1em solid transparent;
+                    border-right: 10px solid $selected-color;
+                }
+                &:after{
+                    top:50%;
+                    border-bottom: 1em solid transparent;
+                    border-right: 10px solid $selected-color;
+                }
             }
         }
     }
