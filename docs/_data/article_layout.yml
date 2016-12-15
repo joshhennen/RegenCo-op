@@ -9,7 +9,7 @@
 - category: My Second Category With a Ridiculously Long Name!
   article_permalinks:
   - My-Third-Article
-  - fourth_art_link
+  # - fourth_art_link
 
 # - category: My Second Category!
 # - category: My Second Category!
