@@ -405,7 +405,7 @@ article {
             right: 15px;
             border-radius: 50%;
             background: $dark-teal;
-            @include box-shadow( 1px 1px 4px 0 $dark-brown);
+            @include box-shadow( 1px 1px 4px 0 $light-blue);
         }
     }
 
