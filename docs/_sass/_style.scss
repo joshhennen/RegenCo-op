@@ -15,7 +15,7 @@ $dark-teal : darken($main-teal, $variation);
 $main-gold : hsla(51, 72%, 42%, 1);
 $light-gold : lighten($main-gold, $variation);
 $dark-gold : darken($main-gold, $variation);
-
+$selected-color : lighten($main-gold, 15%);
 /***** Variables *****/
 $menubar-height: 56px;
 
@@ -23,7 +23,6 @@ $menubar-height: 56px;
 /***** Body *****/
 body{
     margin: 0 auto;
-    max-width: 999px;
     background: $main-brown;
 }
 
@@ -68,7 +67,7 @@ header{
     $menubar-foreground: $main-gold;
     $icon-size: $menubar-height/7*3;
     position: fixed;
-    z-index: 3;
+    z-index: 1;
     top:0;
     left:0;
     height:$menubar-height;
@@ -94,97 +93,97 @@ header{
         width: auto;
         float:right;
     }
-    .icon-box{
+    @at-root .icon-box{
         float:right;
-        height:100%;
+        height:56px;
         width:$menubar-height;
         padding: $menubar-height/7*2;
-    }
-    .home-icon{
-        $house-color: $menubar-foreground;
-        /* roof */
-        position: relative;
-        width:0;
-        height:0;
-        border-left:$icon-size/2 solid transparent;
-        border-right: $icon-size/2 solid transparent;
-        border-bottom: $icon-size/2*5/4 solid $house-color;
-        &:before{
-            /* chimney */
-            content: "";
-            position: absolute;
-            left:-$icon-size/3;
-            top:$icon-size/12;
-            height:$icon-size/2 - 2px;
-            width:$icon-size/6;
-            background: $house-color;
+        &.home>div{
+            $house-color: $menubar-foreground;
+            /* roof */
+            position: relative;
+            width:0;
+            height:0;
+            border-left:$icon-size/2 solid transparent;
+            border-right: $icon-size/2 solid transparent;
+            border-bottom: $icon-size/2*5/4 solid $house-color;
+            &:before{
+                /* chimney */
+                content: "";
+                position: absolute;
+                left:-$icon-size/3;
+                top:$icon-size/12;
+                height:$icon-size/2 - 2px;
+                width:$icon-size/6;
+                background: $house-color;
+            }
+            &:after{
+                /* house */
+                content: "";
+                position: absolute;
+                left:-$icon-size/3;
+                top:$icon-size/2 - 1px;
+                height:$icon-size/2 + 1px;
+                width:$icon-size*2/3;
+                background: $house-color;
+            }
         }
-        &:after{
-            /* house */
-            content: "";
-            position: absolute;
-            left:-$icon-size/3;
-            top:$icon-size/2 - 1px;
-            height:$icon-size/2 + 1px;
-            width:$icon-size*2/3;
-            background: $house-color;
-        }
-    }
-    .menu-icon{
-        $menu-color: $menubar-foreground;
-        /* top bar */
-        position:relative;
-        background: $menu-color;
-        height:$icon-size/4;
-        width: $icon-size;
-        &:before{
-            /* middle bar */
-            content: "";
-            position: absolute;
-            top:$icon-size/4 + $icon-size/4/2;
-            height:$icon-size/4;
-            width:$icon-size;
+        &.menu>div{
+            $menu-color: $menubar-foreground;
+            /* top bar */
+            position:relative;
             background: $menu-color;
-        }
-        &:after{
-            /* bottom bar */
-            content: "";
-            position: absolute;
-            top:$icon-size/2 + $icon-size/4;
             height:$icon-size/4;
-            width:$icon-size;
-            background: $menu-color;
+            width: $icon-size;
+            &:before{
+                /* middle bar */
+                content: "";
+                position: absolute;
+                top:$icon-size/4 + $icon-size/4/2;
+                height:$icon-size/4;
+                width:$icon-size;
+                background: $menu-color;
+            }
+            &:after{
+                /* bottom bar */
+                content: "";
+                position: absolute;
+                top:$icon-size/2 + $icon-size/4;
+                height:$icon-size/4;
+                width:$icon-size;
+                background: $menu-color;
+            }
         }
-    }
-    .top-icon{
-        $top-color: $menubar-foreground;
-        /* arrowhead */
-        position: relative;
-        left:$icon-size/4;
-        width:0;
-        height:0;
-        border-left:$icon-size/3 solid transparent;
-        border-right: $icon-size/3 solid transparent;
-        border-bottom: $icon-size/2 solid $top-color;
-        &:before{
-            /* vertical bar */
-            border-bottom-left-radius: $icon-size/5;
-            content: "";
-            position: absolute;
-            top:$icon-size/2 - 2px;
-            left:-$icon-size/8;
-            height:$icon-size/2 + 2px;
-            width:$icon-size/4;
-            background: $top-color;
-        }
-        &:after{
-            /* horizontal bar */
-            content: "";
-            position: absolute;
-            top:$icon-size*3/4;
-            height:$icon-size/4;
-            width:$icon-size/3;
-            background: $top-color;
+        &.top>div{
+            $top-color: $menubar-foreground;
+            /* arrowhead */
+            position: relative;
+            left:$icon-size/6;
+            width:0;
+            height:0;
+            border-left:$icon-size/3 solid transparent;
+            border-right: $icon-size/3 solid transparent;
+            border-bottom: $icon-size/2 solid $top-color;
+            &:before{
+                /* vertical bar */
+                border-bottom-left-radius: $icon-size/5;
+                content: "";
+                position: absolute;
+                top:$icon-size/2 - 2px;
+                left:-$icon-size/8;
+                height:$icon-size/2 + 2px;
+                width:$icon-size/4;
+                background: $top-color;
+            }
+            &:after{
+                /* horizontal bar */
+                content: "";
+                position: absolute;
+                top:$icon-size*3/4;
+                height:$icon-size/4;
+                width:$icon-size/3;
+                background: $top-color;
+            }
         }
     }
 }
@@ -192,48 +191,14 @@ header{
 /***** Articles *****/
 article {
     position:relative;
-    margin: 0 5px;
-
+    
     img, span{
         max-width: 100% !important;
         height: auto !important;
     }
 
-    .title-banner{
-        position: relative;
-        font-size: 1.5em;
-        text-align: center;
-        color: $light-gold;
-        background: $dark-teal;
-        padding: 3px 5px;
-        @include box-shadow(0 5px 7px -2px black);
-        &:before{
-            /* Bottom left triangle */
-            content: "";
-            z-index: -1;
-            position: absolute;
-            left:0;
-            bottom: -30px;
-            height:0;
-            width:0;
-            border-top: 30px solid $dark-green;
-            border-left: 10px solid transparent;
-        }
-        &:after{
-            /* Bottom right triangle */
-            content: "";
-            z-index: -1;
-            position: absolute;
-            right:0;
-            bottom: -30px;
-            height:0;
-            width:0;
-            border-top: 30px solid $dark-green;
-            border-right: 10px solid transparent;
-        }
-    }
-
     .content{
+        max-width: 825px; /* Output width of google docs */
         margin:0 10px;
         padding:5px 5px;
         background: $light-blue;
@@ -241,9 +206,56 @@ article {
     }
 }
 
+/***** Title banners *****/
+.title-banner{
+    position: relative;
+    
+    font-size: 1.5em;
+    text-align: center;
+    color: $light-gold;
+    background: $dark-teal;
+    padding: 3px 5px;
+    @include box-shadow(0 5px 7px -2px black);
+    &:before{
+        /* Bottom left triangle */
+        content: "";
+        position: absolute;
+        left:0;
+        bottom: -30px;
+        height:0;
+        width:0;
+        border-top: 30px solid $dark-green;
+        border-left: 10px solid transparent;
+    }
+    &:after{
+        /* Bottom right triangle */
+        content: "";
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        height:0;
+        width:0;
+        border-top: 30px solid $dark-green;
+        border-right: 10px solid transparent;
+    }
+}
+.title-banner-content{
+    position: relative;    
+}
+
 /***** Sidebar *****/
 .sidebar {
-    position: relative;
+    position: fixed;
+    top:56px;
+    bottom: 0;
+    left:0;
+    right:0;
+    overflow: auto;
+    z-index: 2;
+
+    .title-banner{
+        display: none;
+    }
 
     label{
         cursor:pointer;
@@ -254,88 +266,106 @@ article {
 
     label#menu-toggle{
         position:fixed;
-        z-index: 4;
+        
         top:0;
         right:0;
         height:56px;
         width:56px;
-        &+input:checked + .categories {
+        &~.title-banner-content {
+            display: none;
+        }
+        &+input:checked ~ .title-banner-content {
             display: block;
         }
     }
-
     .categories{
         $category-color: $dark-green;
-        position:fixed;
-        z-index: 2;
-        top:56px;
-        bottom: 0;
-        left:0;
-        right:0;
-        overflow: auto;
-        display: none;
+        position: relative;
+        @include box-shadow(0 4px 8px -1px black);
 
         label{
             position: relative;
-            float:left;
+            min-height: 56px;
             width:100%;
             text-align: center;
 
-            &:after{
-                z-index: 1;
-                content:'';
-                position: absolute;
-                left:0;
-                width: 100%;
-                height:100%;
-                top:0;
-                @include box-shadow(0 1px 4px 1px black);
-            }
-
             &:not(:last-of-type) div{
                 border-bottom: 1px dashed $main-gold;
-            }     
-            div {
+            }
+            div{
                 position: relative;
-                z-index: 2;
-                padding: 0 5px;
+                padding: 3px;
+                
+                width: 100%;
+                height: 56px;
+                display: table;
                 background:$dark-green;
-                display: block;
-                height:56px;       
                 span{
                     color: $light-gold;
-                    display: block;
-                    height: 100%;
-                    width: 100%;
-                    line-height: 56px;
-                    font-size: 1.2em;
+                    display: table-cell;
                     vertical-align: middle;
-                    overflow-x: auto;
-                    overflow-y: hidden;
-                    white-space: nowrap;
                 }
             }
         }
 
-        input:checked + .links {
-            display: block;
-        }
-
         .links {
-            float:left;
-            width: 100%;
             text-align: left;
             padding:0;
             margin: 0;
             list-style: none;
-            background:indigo;
-            display: none;
-            z-index: 0;
-            li {
-                position: relative;
-                padding: 7px 5px;
-                background: $light-gold;
+            width: 100%;
+            background: $light-gold;
+            &:first-child{                
+                @include box-shadow(0 7px 4px -6px black inset, 0 -6px 4px -6px black inset);
+                a{
+                    margin: 4px 0;
+                }
             }
+            a {
+                display: inline-block;
+                &.current li{                    
+                    border-top: 2px dotted $main-gold;
+                    border-bottom: 2px dotted $main-gold;
+                    background: $selected-color;
+                    &:hover{
+                        background: darken($selected-color, $amount: 7%);
+                    }
+                }
+                li {
+                    position: relative;
+                    padding: 7px 5px;
+                    
+                    &:hover{
+                        background: darken($light-gold, $amount: 7%);
+                    }                
+                }
+            }
+
+        }
+        input + .links{
+            a {
+                display: block;
+                &:first-child li{
+                    border-top: none;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        width: 100%;
+                        height: 100%;
+                        @include box-shadow(0 7px 4px -6px black inset);
+                    }
+                }
+                &:last-child li{
+                    border-bottom: none;
+                    @include box-shadow(0 -6px 4px -6px black inset);
+                }
+            }
+            display: none;
+        }
+        input:checked + .links {
+            display: block;
         }
     }
 }
@@ -343,9 +373,121 @@ article {
 /* Remove top menubar to the side */
 /* Move to-top icon to lower right corner */    
 /* Make article take up 2/3, and sidebar 1/3 */
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 600px){
 
+    #wrapper{
+        top:0;
+    }
 
+    .content-wrapper{   
+        float: left;
+        padding: 5px 5px 0 5px;
+        
+        &.left{
+            max-width: 825px + 10px; /* Output width of google docs */
+            width: 2/3 * 100%;
+        }
+        &.right{
+            max-width: 300px;
+            width: 1/3 * 100%;
+        }
+    }
 
+    .menubar{
+        display: static;
+        position: relative;
+        .menu{
+            display: none;
+        }
+        .top{
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            border-radius: 50%;
+            background: $dark-teal;
+            @include box-shadow( 1px 1px 4px 0 $dark-brown);
+        }
+    }
+
+    .grid{
+        max-width: 825px + 10px + 300px;
+        margin: 0 auto;
+    }
+
+    .sidebar{
+        display: block;
+        position: static;
+        #menu-toggle{
+            display: none;
+        }
+        .title-banner{
+            display: block;
+        }
+        .title-banner-content{
+            display: block !important;
+            padding: 0 10px;
+            .category:first-of-type>div{
+                @include box-shadow(0 7px 4px -6px black inset);
+            }
+        }
+
+        .categories{
+            display: block;
+            position: static;
+            .links{
+                &:first-child{
+                    @include box-shadow(none);
+                    a{
+                        margin: initial;
+                    }
+                }
+                a{
+                    display: block;
+                    &:first-child li{
+                        border-top: none;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            top:0;
+                            left:-5px;
+                            width: 105%;
+                            height: 100%;
+                            @include box-shadow(0 7px 4px -6px black inset);
+                        }
+                    }
+                    &:last-child li{
+                        border-bottom: none;
+                        @include box-shadow(0 -6px 4px -6px black inset);
+                    }
+                }
+            }
+
+            .current{
+                position: relative;
+                &:before{
+                    bottom:50%;                    
+                    border-top: 1em solid transparent;
+                    border-right: 15px solid $selected-color;
+                }
+                &:after{
+                    top:50%;
+                    border-bottom: 1em solid transparent;
+                    border-right: 15px solid $selected-color;
+                }
+                &:after, &:before{
+                    content:'';
+                    position: absolute;
+                    left:-15px;
+                    width:0;
+                    height:0;
+                }
+                &:hover{
+                    &:after, &:before{
+                        border-right-color: darken($color: $selected-color, $amount: 7%);
+                    }
+                }
+            }
+        }
+    }
 
 }
