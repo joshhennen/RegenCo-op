@@ -6,12 +6,15 @@
 #  - YOUR-PERMALINK-HERE
 #  - YOUR-PERMALINK-HERE
 
-- category: My First Category!
+- category: Social Structures
   article_permalinks:
   - Why-you-do-dat
   - Testing-for-special-characters!!!
   - My-Fifth-Article
 
-- category: My Second Category With a Ridiculously Long Name!
+- category:Energy 
   article_permalinks:
   - My-Third-Article
+  
+- category:Permaculture
+  
