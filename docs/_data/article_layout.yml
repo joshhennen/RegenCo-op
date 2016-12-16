@@ -1,5 +1,11 @@
 # To add a new article or category, use the following format
 # (ignore the '#' symbol, but keep in mind the spaces and dashes)
+#- category: Category Name Goes Here!
+#  article_permalinks:
+#  - YOUR-PERMALINK-HERE
+#  - YOUR-PERMALINK-HERE
+#  - YOUR-PERMALINK-HERE
+
 - category: My First Category!
   article_permalinks:
   - Why-you-do-dat
@@ -9,9 +15,3 @@
 - category: My Second Category With a Ridiculously Long Name!
   article_permalinks:
   - My-Third-Article
-  # - fourth_art_link
-
-# - category: My Second Category!
-# - category: My Second Category!
-# - category: My Second Category!
-# - category: My Second Category!
