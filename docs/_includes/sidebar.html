@@ -9,10 +9,8 @@
     <div class="title-banner-content">
         <div class="categories">
             <ul class="links">
-                {% assign contact_url = "contact" | prepend:"/info/" %}
-                {% assign p = site.info | where:"url", contact_url | first %}
-                <a href="{{ p.url }}" class="{% if contact_url == page.url %}current{% endif %}"><li>Contact Us</li></a>
-                <!--<a href="adf"><li class="{% if article_url == page.url %}current{% endif %}">asdf Us</li></a>-->
+                {% assign contact_url = "/info/contact" %}
+                <a href="{{ contact_url }}" class="{% if contact_url == page.url %}current{% endif %}"><li>Contact Us</li></a>
             </ul>
         </div>
     </div>
