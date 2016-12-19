@@ -8,7 +8,6 @@ layout: article
 The  guiding principles of the REGENCO-OP are to live in balance and harmony with each other and with nature. To do this requires us to reduce inefficiency and put the power and consequently the responsibility back into the hands of the common person. The current economic and sociopolitical systems currently in use feedback on each other to reward both waste and the consolidation of power. 
 	
 The current dominant ideology in the world is not religious, it's not political it is economical and that ideology is Capitalism. The Capitalist system uses the corporation and its [hierarchical organization](/articles/HierarchicalOrganization) to concentrate resources a.k.a wealth a.k.a. capital to the top tiers of the hierarchy. Along with its hierarchical structure it is an open linear system by which concentration of wealth at the top is equaled by concentration of pollution at the bottom, this is contradictory to the closed loop cyclical system that is the ecology of the biosphere. 
-{:.red}
 
 Capitalism is also highly competitive. Workers compete with other workers to get the best paying job. Once you have a job you compete to move up the hierarchy to gain status and wealth and the “privilege” of bossing other people around. If you are lucky enough to make it to the top of your corporation you then compete with other corporations for market share and these markets then compete with other markets.
 
