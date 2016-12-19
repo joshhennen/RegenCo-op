@@ -1,5 +1,6 @@
 ---
 layout: article
+title: Renewable Energy GENeration CO-OPerative
 ---
 
 ## Model for a Sustainable Future
