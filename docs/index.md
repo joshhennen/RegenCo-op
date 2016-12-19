@@ -10,7 +10,7 @@ title: Renewable Energy GENeration CO-OPerative
 
 The  guiding principles of the REGENCO-OP are to live in balance and harmony with each other and with nature. To do this requires us to reduce inefficiency and put the power and consequently the responsibility back into the hands of the common person. The current economic and sociopolitical systems currently in use feedback on each other to reward both waste and the consolidation of power. 
 	
-The current dominant ideology in the world is not religious, it's not political it is economical and that ideology is Capitalism. The Capitalist system uses the corporation and its [hierarchical organization](/articles/HierarchicalOrganization) to concentrate resources a.k.a wealth a.k.a. capital to the top tiers of the hierarchy. Along with its hierarchical structure it is an open linear system by which concentration of wealth at the top is equaled by concentration of pollution at the bottom, this is contradictory to the closed loop cyclical system that is the ecology of the biosphere. 
+The current dominant ideology in the world is not religious, it's not political it is economical and that ideology is Capitalism. The Capitalist system uses the corporation and its [hierarchical organization](/articles/Hierarchical-Organization) to concentrate resources a.k.a wealth a.k.a. capital to the top tiers of the hierarchy. Along with its hierarchical structure it is an open linear system by which concentration of wealth at the top is equaled by concentration of pollution at the bottom, this is contradictory to the closed loop cyclical system that is the ecology of the biosphere. 
 
 Capitalism is also highly competitive. Workers compete with other workers to get the best paying job. Once you have a job you compete to move up the hierarchy to gain status and wealth and the “privilege” of bossing other people around. If you are lucky enough to make it to the top of your corporation you then compete with other corporations for market share and these markets then compete with other markets.
 
@@ -19,7 +19,7 @@ Several things are not commonly known about corporations. The first of these is 
 This competitive hierarchical structure is the root cause of both our social and environmental problems. Even though we have talked about Capitalism this hierarchical societal organization has existed since the beginnings of civilization. Some question whether civilization is compatible with ecology. We believe it is as long as civilization is organized in an ecological way. Therefore the REGENCO-OP is structured as an anarchical organization, that is, as voluntary free association co-operative that is unincorporated. We are a place for people who want to take on the responsibility and reap the rewards of insuring theirs, their children's and grandchildren’s etc. sustainable existence.  
 
 ### We know that we must co-operate to regenerate life!
-{: .teal .dark}
+{: .teal .dark .center}
 
 Current areas of focus:
 
