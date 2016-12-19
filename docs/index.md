@@ -1,7 +1,9 @@
 ---
 layout: article
 ---
+
 ## Model for a Sustainable Future
+{: .center}
 
 ### Mission Statement: To bring people together to find and implement solutions to allow a sustainable future for all people and all life. 
 
