@@ -41,8 +41,8 @@ Current areas of focus:
 
  - Identify and implement current social and technological trends that complement the objectives of the REGenCo-op. 
 
-##This site is always under construction. 
+## This site is always under construction. 
 
-##Because we just started this co-operative we are seeking people to help generate content for the website and set up the structure of the co-operative or help in any way they can.
+## Because we just started this co-operative we are seeking people to help generate content for the website and set up the structure of the co-operative or help in any way they can.
 
-##Please click on the Join Us! link to get started.
+## Please click on the Join Us! link to get started.
