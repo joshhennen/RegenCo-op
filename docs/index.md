@@ -19,7 +19,8 @@ Several things are not commonly known about corporations. The first of these is 
 This competitive hierarchical structure is the root cause of both our social and environmental problems. Even though we have talked about Capitalism this hierarchical societal organization has existed since the beginnings of civilization. Some question whether civilization is compatible with ecology. We believe it is as long as civilization is organized in an ecological way. Therefore the REGENCO-OP is structured as an anarchical organization, that is, as voluntary free association co-operative that is unincorporated. We are a place for people who want to take on the responsibility and reap the rewards of insuring theirs, their children's and grandchildren’s etc. sustainable existence.  
 
 ### We know that we must co-operate to regenerate life!
- 
+{: .teal .dark}
+
 Current areas of focus:
 
  - Using the  principles of a voluntary free association co-operative and the tools provided by the internet  develop an organizational system that allows the Mission of REGenCo-op to be realized.
