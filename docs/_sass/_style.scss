@@ -193,6 +193,7 @@ article {
     position:relative;
     
     img, span{
+        float: left;
         max-width: 100% !important;
         height: auto !important;
     }
@@ -204,6 +205,10 @@ article {
         background: $light-blue;
         @include box-shadow(0 1px 6px 1px $dark-brown);
         
+        &>p{
+            text-indent: 1em;
+
+        }
         .center{
             text-align:center;
         }
