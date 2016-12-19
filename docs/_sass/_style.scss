@@ -207,6 +207,51 @@ article {
         .center{
             text-align:center;
         }
+        .blue{
+            color:$main-blue;
+            &.dark{
+                color:$dark-blue;
+            }
+            &.light{
+                color:$light-blue;
+            }
+        }
+        .green{
+            color:$main-green;
+            &.dark{
+                color:$dark-green;
+            }
+            &.light{
+                color:$light-green;
+            }
+        }
+        .teal{
+            color:$main-teal;
+            &.dark{
+                color:$dark-teal;
+            }
+            &.light{
+                color:$light-teal;
+            }
+        }
+        .brown{
+            color:$main-brown;
+            &.dark{
+                color:$dark-brown;
+            }
+            &.light{
+                color:$light-brown;
+            }
+        }
+        .gold{
+            color:$main-gold;
+            &.dark{
+                color:$dark-gold;
+            }
+            &.light{
+                color:$light-gold;
+            }
+        }
     }
 }
 
