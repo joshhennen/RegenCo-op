@@ -481,11 +481,16 @@ article {
         a{
             display: inline-block;
             height: 100%;
-            padding: 0.1em 0.3em 0;
+            padding: 0.1em 0.3em 0 0.2em;
             border-radius: .5em;
             background: desaturate(darken($light-blue,5%), 20%);
             @include box-shadow(0 1px 4px 0 desaturate(darken($main-blue,8%), 50%) inset);
             margin: 5px 0 0 0;
+            .icon-pencil{
+                padding-top: 4px;
+                max-height: 2em;
+                max-width: 2em;
+            }
             .icon-pencil+span{
                 display: inline-block;
                 max-width: 0;
