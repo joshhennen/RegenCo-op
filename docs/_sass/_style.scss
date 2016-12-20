@@ -575,17 +575,17 @@ article {
                 &:before{
                     bottom:50%;                    
                     border-top: 1em solid transparent;
-                    border-right: 15px solid $selected-color;
+                    border-right: 30px solid $selected-color;
                 }
                 &:after{
                     top:50%;
                     border-bottom: 1em solid transparent;
-                    border-right: 15px solid $selected-color;
+                    border-right: 30px solid $selected-color;
                 }
                 &:after, &:before{
                     content:'';
                     position: absolute;
-                    left:-15px;
+                    left:-30px;
                     width:0;
                     height:0;
                 }
