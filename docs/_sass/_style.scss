@@ -297,18 +297,23 @@ article {
     }
 }
 .title-banner-content{
-    position: relative;    
+    position: relative;
 }
 
 /***** Sidebar *****/
 .sidebar {
-    position: fixed;
-    top:56px;
-    bottom: 0;
-    left:0;
-    right:0;
-    overflow: auto;
+    position: relative;
     z-index: 2;
+
+    .category-wrapper{
+        position: fixed;
+        top:56px;
+        bottom: 0;
+        left:0;
+        right:0;
+        overflow: auto;
+        background-color: hsla(0, 0, 0, 0.3);
+    }
 
     .title-banner{
         display: none;
@@ -328,10 +333,10 @@ article {
         right:0;
         height:56px;
         width:56px;
-        &~.title-banner-content {
+        &+input+.category-wrapper {
             display: none;
         }
-        &+input:checked ~ .title-banner-content {
+        &+input:checked + .category-wrapper {
             display: block;
         }
     }
@@ -512,8 +517,13 @@ article {
     }
 
     .sidebar{
-        display: block;
-        position: static;
+        z-index: initial;
+
+        .category-wrapper{
+            background: initial;
+            display: block !important;
+            position: static;
+        }
         #menu-toggle{
             display: none;
         }
@@ -521,7 +531,7 @@ article {
             display: block;
         }
         .title-banner-content{
-            display: block !important;
+            display: block;
             padding: 0 10px;
             .category:first-of-type>div{
                 @include box-shadow(0 7px 4px -6px black inset);
