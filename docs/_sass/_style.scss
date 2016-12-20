@@ -24,6 +24,8 @@ $menubar-height: 56px;
 body{
     margin: 0 auto;
     background: $main-brown;
+    font-size: 100%;
+    font-family: sans-serif;
 }
 
 #wrapper {
@@ -192,10 +194,13 @@ header{
 article {
     position:relative;
     
-    img, span{
-        float: left;
+    img{
         max-width: 100% !important;
         height: auto !important;
+    }
+
+    .improve{
+        display: none;
     }
 
     .content{
@@ -206,8 +211,7 @@ article {
         @include box-shadow(0 1px 6px 1px $dark-brown);
         
         &>p{
-            text-indent: 1em;
-
+            //text-indent: 1em;
         }
         .center{
             text-align:center;
@@ -466,6 +470,37 @@ article {
     .grid{
         max-width: 825px + 10px + 300px;
         margin: 0 auto;
+    }
+
+    .improve{
+        display: block !important;
+        float: right;
+        a{
+            display: inline-block;
+            height: 100%;
+            padding: 0.1em 0.3em 0;
+            border-radius: .5em;
+            background: desaturate(darken($light-blue,5%), 20%);
+            @include box-shadow(0 1px 4px 0 desaturate(darken($main-blue,8%), 50%) inset);
+            margin: 5px 0 0 0;
+            .icon-pencil+span{
+                display: inline-block;
+                max-width: 0;
+                overflow: hidden;
+                white-space: nowrap;
+                @include transition(max-width .5s ease-out);
+            }
+            &:hover .icon-pencil+span{
+                max-width: 200px;
+                @include transition(max-width .5s ease-out);
+            }
+        }
+        @at-root .icon-pencil:before{
+            display: inline-block;
+            text-align: right; 
+            content: "\270E";
+            font-size: 1.6em;
+        }
     }
 
     .sidebar{
