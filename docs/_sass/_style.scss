@@ -69,7 +69,7 @@ header{
     $menubar-foreground: $main-gold;
     $icon-size: $menubar-height/7*3;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top:0;
     left:0;
     height:$menubar-height;
@@ -204,7 +204,6 @@ article {
     }
 
     .content{
-        margin:0 10px;
         padding:5px 5px;
         background: $light-blue;
         @include box-shadow(0 1px 6px 1px $dark-brown);
@@ -266,13 +265,13 @@ article {
 /***** Title banners *****/
 .title-banner{
     position: relative;
-    
+    z-index: 1;
     font-size: 1.5em;
     text-align: center;
     color: $light-gold;
     background: $dark-teal;
     padding: 3px 5px;
-    @include box-shadow(0 5px 7px -2px black);
+    @include box-shadow(0 2px 7px 0px black);
     &:before{
         /* Bottom left triangle */
         content: "";
@@ -298,6 +297,7 @@ article {
 }
 .title-banner-content{
     position: relative;
+    padding: 0 10px;
 }
 
 /***** Sidebar *****/
@@ -532,8 +532,6 @@ article {
             display: block;
         }
         .title-banner-content{
-            display: block;
-            padding: 0 10px;
             .category:first-of-type>div{
                 @include box-shadow(0 7px 4px -6px black inset);
             }
@@ -588,6 +586,7 @@ article {
                     left:-30px;
                     width:0;
                     height:0;
+                    z-index: 1;
                 }
                 &:hover{
                     &:after, &:before{
