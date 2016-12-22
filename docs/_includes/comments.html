@@ -1,9 +1,7 @@
 {% if page.comments %}
 <div class="title-banner"> Comments </div>
 <div id="comments" class="title-banner-content">
-    <div id="disqus_thread" class="content">
-        <noscript>Please enable JavaScript to view the comments for this article.</noscript>
-    </div>
+    <div id="disqus_thread" class="content"></div>
     <script>
 
         /**
@@ -22,6 +20,7 @@
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
-    </script>    
+    </script>
+    <noscript>Please enable JavaScript to view the comments for this article.</noscript>
 </div>
 {% endif %}
