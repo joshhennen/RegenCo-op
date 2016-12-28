@@ -11,6 +11,8 @@
                 <ul class="links">
                     {% assign contact_url = "/info/contact" %}
                     <a href="{{ contact_url }}" class="{% if contact_url == page.url %}current{% endif %}"><li>Contact Us</li></a>
+                    {% assign contribute_url = "/info/How-to-Contribute" %}
+                    <a href="{{ contribute_url }}" class="{% if contribute_url == page.url %}current{% endif %}"><li>How to Contribute</li></a>
                 </ul>
             </div>
         </div>

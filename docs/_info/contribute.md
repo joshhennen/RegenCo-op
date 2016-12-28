@@ -8,7 +8,7 @@ comments: false
 
 REGen Co-op strives to make it easy for as many people to help contribute to the organization in as many ways as possible. If at any point you find it difficult to contribute, please don't hesitate to [contact us](/info/contact); we will help you with any troubles you're having. By participating and contributing we grow as a community and have a greater impact on the world than by simply doing things on our own.
 
-As a non-member, you are allowed to [make comments](#todo), [suggest changes to articles](#todo), [write new articles](#todo), and [help fund the co-operative](#todo). [Becoming a member](#todo) allows you to do those things with a louder voice. Contributions by members have the biggest impact on the direction the co-operative takes. Members are what _makes_ this a co-operative, and their contributions are taken more seriously. Members and non-members can contribute to the co-operative in the following ways:
+As a non-member, you are allowed to [make comments](#making-comments), [suggest changes to articles](#improving-an-article), [write new articles](#writing-a-new-article), and [help fund the co-operative](#funding-the-co-operative). [Becoming a member](#todo) allows you to do those things with a louder voice. Contributions by members have the biggest impact on the direction the co-operative takes. Members are what _makes_ this a co-operative, and their contributions are taken more seriously. Members and non-members can contribute to the co-operative in the following ways:
 
 - ## Making Comments:
 
