@@ -1,43 +1,41 @@
 <nav class="sidebar content-wrapper right">    
     <label for="menu-button" id="menu-toggle"></label>
     <input id="menu-button" type="checkbox">
-    
-    <!--General information links-->
-    <div class="title-banner">
-        General Info
-    </div>
-    <div class="title-banner-content">
-        <div class="categories">
-            <ul class="links">
-                {% assign contact_url = "contact" | prepend:"/info/" %}
-                {% assign p = site.info | where:"url", contact_url | first %}
-                <a href="{{ p.url }}" class="{% if contact_url == page.url %}current{% endif %}"><li>Contact Us</li></a>
-                <!--<a href="adf"><li class="{% if article_url == page.url %}current{% endif %}">asdf Us</li></a>-->
-            </ul>
+    <div class="category-wrapper">
+        <!--General information links-->
+        <div class="title-banner">
+            General Info
         </div>
-    </div>
-    
-    <!--Categories with articles-->
-    <div class="title-banner">
-        Articles
-    </div>
-    <div class="title-banner-content">
-        <div class="categories">
-            {% for category in site.data.article_layout %}
-            <label for="check{{ forloop.index }}" onlick class="category">
-                <div><span>{{ category.category }}</span></div>
-            </label>
-            {% assign curr_permalink = page.url | remove_first: "/articles/" %}
-            <input id="check{{ forloop.index }}" type="checkbox" name="sidebar" {% if category.article_permalinks contains curr_permalink %}checked{% endif %}>
-            <ul class="links">
-                {% for permalink in category.article_permalinks %}
-                    {% assign article_url = permalink | prepend:"/articles/" %}
-                    {% assign p = site.articles | where:"url", article_url | first %}
-                    <a href="{{ p.url }}" class="{% if article_url == page.url %}current{% endif %}"><li >{{ p.title }}</li></a>
+        <div class="title-banner-content">
+            <div class="categories">
+                <ul class="links">
+                    {% assign contact_url = "/info/contact" %}
+                    <a href="{{ contact_url }}" class="{% if contact_url == page.url %}current{% endif %}"><li>Contact Us</li></a>
+                </ul>
+            </div>
+        </div>
+        
+        <!--Categories with articles-->
+        <div class="title-banner">
+            Articles
+        </div>
+        <div class="title-banner-content">
+            <div class="categories">
+                {% for category in site.data.article_layout %}
+                <label for="check{{ forloop.index }}" onlick class="category">
+                    <div><span>{{ category.category }}</span></div>
+                </label>
+                {% assign curr_permalink = page.url | remove_first: "/articles/" %}
+                <input id="check{{ forloop.index }}" type="checkbox" name="sidebar" {% if category.article_permalinks contains curr_permalink %}checked{% endif %}>
+                <ul class="links">
+                    {% for permalink in category.article_permalinks %}
+                        {% assign article_url = permalink | prepend:"/articles/" %}
+                        {% assign p = site.articles | where:"url", article_url | first %}
+                        <a href="{{ p.url }}" class="{% if article_url == page.url %}current{% endif %}"><li >{{ p.title }}</li></a>
+                    {% endfor %}
+                </ul>
                 {% endfor %}
-            </ul>
-            {% endfor %}
+            </div>           
         </div>
     </div>
-
 </nav>

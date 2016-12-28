@@ -24,6 +24,8 @@ $menubar-height: 56px;
 body{
     margin: 0 auto;
     background: $main-brown;
+    font-size: 100%;
+    font-family: sans-serif;
 }
 
 #wrapper {
@@ -67,7 +69,7 @@ header{
     $menubar-foreground: $main-gold;
     $icon-size: $menubar-height/7*3;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top:0;
     left:0;
     height:$menubar-height;
@@ -192,30 +194,84 @@ header{
 article {
     position:relative;
     
-    img, span{
+    img{
         max-width: 100% !important;
         height: auto !important;
     }
 
+    .improve{
+        display: none;
+    }
+
     .content{
-        max-width: 825px; /* Output width of google docs */
-        margin:0 10px;
         padding:5px 5px;
         background: $light-blue;
         @include box-shadow(0 1px 6px 1px $dark-brown);
+        
+        &>p{
+            //text-indent: 1em;
+        }
+        .center{
+            text-align:center;
+        }
+        .blue{
+            color:$main-blue;
+            &.dark{
+                color:$dark-blue;
+            }
+            &.light{
+                color:$light-blue;
+            }
+        }
+        .green{
+            color:$main-green;
+            &.dark{
+                color:$dark-green;
+            }
+            &.light{
+                color:$light-green;
+            }
+        }
+        .teal{
+            color:$main-teal;
+            &.dark{
+                color:$dark-teal;
+            }
+            &.light{
+                color:$light-teal;
+            }
+        }
+        .brown{
+            color:$main-brown;
+            &.dark{
+                color:$dark-brown;
+            }
+            &.light{
+                color:$light-brown;
+            }
+        }
+        .gold{
+            color:$main-gold;
+            &.dark{
+                color:$dark-gold;
+            }
+            &.light{
+                color:$light-gold;
+            }
+        }
     }
 }
 
 /***** Title banners *****/
 .title-banner{
     position: relative;
-    
+    z-index: 1;
     font-size: 1.5em;
     text-align: center;
     color: $light-gold;
     background: $dark-teal;
     padding: 3px 5px;
-    @include box-shadow(0 5px 7px -2px black);
+    @include box-shadow(0 2px 7px 0px black);
     &:before{
         /* Bottom left triangle */
         content: "";
@@ -240,18 +296,24 @@ article {
     }
 }
 .title-banner-content{
-    position: relative;    
+    position: relative;
+    padding: 0 10px;
 }
 
 /***** Sidebar *****/
 .sidebar {
-    position: fixed;
-    top:56px;
-    bottom: 0;
-    left:0;
-    right:0;
-    overflow: auto;
+    position: relative;
     z-index: 2;
+
+    .category-wrapper{
+        position: fixed;
+        top:56px;
+        bottom: 0;
+        left:0;
+        right:0;
+        overflow: auto;
+        background-color: hsla(0, 0, 0, 0.3);
+    }
 
     .title-banner{
         display: none;
@@ -271,10 +333,10 @@ article {
         right:0;
         height:56px;
         width:56px;
-        &~.title-banner-content {
+        &+input+.category-wrapper {
             display: none;
         }
-        &+input:checked ~ .title-banner-content {
+        &+input:checked + .category-wrapper {
             display: block;
         }
     }
@@ -373,10 +435,16 @@ article {
 /* Remove top menubar to the side */
 /* Move to-top icon to lower right corner */    
 /* Make article take up 2/3, and sidebar 1/3 */
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 700px){
 
     #wrapper{
         top:0;
+    }
+
+    article{
+        .content{
+            padding:10px 20px;
+        }
     }
 
     .content-wrapper{   
@@ -384,11 +452,9 @@ article {
         padding: 5px 5px 0 5px;
         
         &.left{
-            max-width: 825px + 10px; /* Output width of google docs */
             width: 2/3 * 100%;
         }
         &.right{
-            max-width: 300px;
             width: 1/3 * 100%;
         }
     }
@@ -410,13 +476,55 @@ article {
     }
 
     .grid{
-        max-width: 825px + 10px + 300px;
+        max-width: 825px + 300px;
         margin: 0 auto;
     }
 
+    .improve{
+        display: block !important;
+        float: right;
+        a{
+            display: inline-block;
+            height: 100%;
+            padding: 0.1em 0.3em 0 0.2em;
+            border-radius: .5em;
+            background: desaturate(darken($light-blue,5%), 20%);
+            @include box-shadow(0 1px 4px 0 desaturate(darken($main-blue,8%), 50%) inset);
+            margin: 5px 0 0 0;
+            .icon-pencil{
+                padding-top: 4px;
+                max-height: 2em;
+                max-width: 2em;
+            }
+            .icon-pencil+span{
+                display: inline-block;
+                max-width: 0;
+                overflow: hidden;
+                white-space: nowrap;
+                @include transition(max-width .5s ease-out);
+            }
+            &:hover .icon-pencil+span{
+                max-width: 200px;
+                @include transition(max-width .5s ease-out);
+            }
+        }
+        @at-root .icon-pencil:before{
+            display: inline-block;
+            text-align: right; 
+            content: "\270E";
+            font-size: 1.6em;
+        }
+    }
+
     .sidebar{
-        display: block;
-        position: static;
+        z-index: initial;
+
+        .category-wrapper{
+            background: initial;
+            display: block !important;
+            position: static;
+            overflow: initial;
+        }
         #menu-toggle{
             display: none;
         }
@@ -424,8 +532,6 @@ article {
             display: block;
         }
         .title-banner-content{
-            display: block !important;
-            padding: 0 10px;
             .category:first-of-type>div{
                 @include box-shadow(0 7px 4px -6px black inset);
             }
@@ -467,19 +573,20 @@ article {
                 &:before{
                     bottom:50%;                    
                     border-top: 1em solid transparent;
-                    border-right: 15px solid $selected-color;
+                    border-right: 30px solid $selected-color;
                 }
                 &:after{
                     top:50%;
                     border-bottom: 1em solid transparent;
-                    border-right: 15px solid $selected-color;
+                    border-right: 30px solid $selected-color;
                 }
                 &:after, &:before{
                     content:'';
                     position: absolute;
-                    left:-15px;
+                    left:-30px;
                     width:0;
                     height:0;
+                    z-index: 1;
                 }
                 &:hover{
                     &:after, &:before{
@@ -490,4 +597,23 @@ article {
         }
     }
 
+}
+
+@media only screen and (min-width: 1000px){
+
+    .content-wrapper{        
+        &.left{
+            width: 3/4 * 100%;
+        }
+        &.right{
+            width: 1/4 * 100%;
+        }
+    }
+
+    article{
+        .content{
+            padding:10px 30px;
+            font-size: 1.1em;
+        }
+    }
 }
