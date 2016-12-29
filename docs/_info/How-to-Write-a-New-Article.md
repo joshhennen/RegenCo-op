@@ -18,7 +18,7 @@ Before you start writing the article, it is recommended that you read the [artic
    
    - Right click on the following link and click save link as... to save it to your desktop: [ArticleTemplate.md](https://github.com/RegenCo-op/RegenCo-op/raw/master/docs/_articles/ArticleTemplate.md)
 
-2. ### Open the file from step 1 in your favorite Markdown editor.  
+2. ### Open the file from step 1 in your favorite Markdown editor:  
    **Note:** A good online editor is [StackEdit](https://stackedit.io/editor), and from now on we will assume you are using that editor for the purposes of this guide:
    
    1. Using Stack Edit, for example, click on the "**#**" in the upper left corner.
