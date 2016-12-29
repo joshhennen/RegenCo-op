@@ -25,7 +25,7 @@ As a non-member, you are allowed to [make comments](#making-comments), [suggest 
   
   Moving your mouse cursor over the icon will show you that you can improve that page. Clicking the icon will take you to Github, where we store and keep updated all the articles of our website. If you are not logged into Github, you will be taken to a Github login screen. If you do not have a Github account, click on the link that says "Create an account", otherwise log into your account. After you have done this, you will be taken to the article's editing page.
 
-  Before you start editing the article, it is recommended to read the [article formatting guidelines](#todo). The guidelines will describe how our articles are written and what the special symbols mean. 
+  Before you start editing the article, it is recommended to read the [article formatting guidelines](/info/Article-Formatting-Guidelines). The guidelines will describe how our articles are written and what the special symbols mean. 
   
   Once you have read the guidelines, feel free to make any changes you wish. Once finished, at the bottom of the page there will be a section called "Propose file change". Please type in a description of what changes you did and why, and click the "Propose file change" button.
 

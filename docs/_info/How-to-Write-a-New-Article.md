@@ -7,11 +7,12 @@ comments: false
 
 This guide will be a step-by-step manual on how to create an article and submit it to GitHub. If you get stuck on any step, don't hesitate to [contact us](/info/contact) and we will help you.
 
-## Write the Article:
-
-Before you start writing the article, it is recommended that you read the [article formatting guidelines](#todo) to get familiar with the basics of how our articles are formatted.
-
 ***
+
+## Compose the Article
+{: .center .dark .teal}
+
+Before you start writing the article, it is recommended that you read the [article formatting guidelines](/info/Article-Formatting-Guidelines) to get familiar with the basics of how our articles are formatted.
 
 1. ### Download the template article:
    
@@ -41,7 +42,7 @@ Before you start writing the article, it is recommended that you read the [artic
       Now you can start writing your article after the last line with the three hyphens (`---`).
       
       - Make a note of where you want to put a picture, if any, but do not worry about how to insert it for now.
-      - Keep in mind the [article formatting guidelines](#todo).
+      - Keep in mind the [article formatting guidelines](/info/Article-Formatting-Guidelines).
       - Also remember to refer to the [Kramdown reference guide](https://kramdown.gettalong.org/quickref.html) if the text isn't formatting the way you want it to.
 
    3. #### Save the article:
@@ -73,11 +74,12 @@ Before you start writing the article, it is recommended that you read the [artic
       2. Make sure to replace `Your-Permalink-Here` with the same permalink text you used in step 3.
       3. Make sure to replace `Your-Image-Here.ext` with the image filename, and **don't forget to use the right filename extension**.
 
-## Set Up a New Fork
+***
+
+## Make a New Fork
+{: .center .dark .teal}
 
 **Note:** You only need to follow these steps one time; In the future you can skip to the [next section](#submit-your-article-to-github).
-
-***
 
 1. Either [sign into github](https://github.com/login) or [make a new account](https://github.com/join).
 2. Go to the [RegenCo-op repository on GitHub](https://github.com/RegenCo-op/RegenCo-op).
@@ -86,11 +88,12 @@ Before you start writing the article, it is recommended that you read the [artic
 5. It would be wise to make a bookmark of your forked repository, as that is what you will use to submit articles. If you do not, you can find it later at:  
    `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op`
 
+***
+
 ## Submit Your Article to GitHub
+{: .center .dark .teal}
 
 By now you should have your article written and named: `Your-Permalink-Here.md` along with your images folder named: `Your-Permalink-Here`. You should also have [forked the RegenCo-op repository](#set-up-a-new-fork) and be signed into your [Github account](https://github.com/login). You are ready to submit your article to the website to be reviewed and published by members of the co-operative.
-
-***
 
 1. ### Updating your fork:  
    As people make changes to the main repository, your fork will become out of date. Follow these steps to keep your fork updated:
