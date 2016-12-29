@@ -38,7 +38,7 @@ Before you start writing the article, it is recommended that you read the [artic
       - **Most articles should leave the _comments: true_ section alone.**
 
    2. #### Write the content:  
-      Now you can start writing your article after the last line with the three hyphens (---).
+      Now you can start writing your article after the last line with the three hyphens (`---`).
       
       - Make a note of where you want to put a picture, if any, but do not worry about how to insert it for now.
       - Keep in mind the [article formatting guidelines](#todo).
