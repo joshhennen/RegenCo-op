@@ -25,7 +25,8 @@ Before you start writing the article, it is recommended that you read the [artic
    2. Click on "import from disk".
    3. Click "browse" and open the file from step 1.
 
-3. ### Write the article: **Do not worry about pictures for now.**
+3. ### Write the article:  
+   **Note:** Do not worry about pictures for now.
    
    1. #### Fill out the top section:
       
@@ -56,7 +57,7 @@ Before you start writing the article, it is recommended that you read the [artic
       `Your-Permalink-Here.md`
 
 4. ### Using images:  
-   **Skip to the next step if you _do not_ want to use any pictures**.
+   **Note:** Skip to the next step if you _do not_ want to use any pictures.
    
    1. #### Prepare the images:
       
