@@ -5,7 +5,7 @@ permalink: /info/How-to-Write-a-New-Article
 comments: false
 ---
 
-This guide will be a step-by-step manual on how to create an article and propose that it be added to the website using GitHub.
+This guide will be a step-by-step manual on how to create an article and submit it to GitHub. If you get stuck on any step, don't hesitate to [contact us](/info/contact) and we will help you.
 
 ## Write the Article:
 
@@ -77,6 +77,8 @@ Before you start writing the article, it is recommended that you read the [artic
 
 **Note:** You only need to follow these steps one time; In the future you can skip to the [next section](#submit-your-article-to-github).
 
+***
+
 1. Either [sign into github](https://github.com/login) or [make a new account](https://github.com/join).
 2. Go to the [RegenCo-op repository on GitHub](https://github.com/RegenCo-op/RegenCo-op).
 3. In the upper right corner, you will see a button called "Fork". Click on it to fork the repository to your account.
@@ -87,6 +89,8 @@ Before you start writing the article, it is recommended that you read the [artic
 ## Submit Your Article to GitHub
 
 By now you should have your article written and named: `Your-Permalink-Here.md` along with your images folder named: `Your-Permalink-Here`. You should also have [forked the RegenCo-op repository](#set-up-a-new-fork) and be signed into your [Github account](https://github.com/login). You are ready to submit your article to the website to be reviewed and published by members of the co-operative.
+
+***
 
 1. ### Updating your fork:  
    As people make changes to the main repository, your fork will become out of date. Follow these steps to keep your fork updated:
