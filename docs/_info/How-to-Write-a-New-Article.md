@@ -88,26 +88,65 @@ Before you start writing the article, it is recommended that you read the [artic
 
 By now you should have your article written and named: `Your-Permalink-Here.md` along with your images folder named: `Your-Permalink-Here`. You should also have [forked the RegenCo-op repository](#set-up-a-new-fork) and be signed into your [Github account](https://github.com/login). You are ready to submit your article to the website to be reviewed and published by members of the co-operative.
 
-1. ### Updating your fork:
-   - Go to your forked repository of the website. It can be found at:  
-     `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op`
-   - 
-
-1. Making a topic branch:
+1. ### Updating your fork:  
+   As people make changes to the main repository, your fork will become out of date. Follow these steps to keep your fork updated:
    
-1. Making and Pushing Changes:
-  1. Open the RegenCo-op project folder (it will be wherever you saved it on your desktop during step 3 of setting up a new fork).
-  2. Move the article file to the docs/_articles folder.
-  3. Move the images folder to the docs/images folder.
-  4. Edit the article layout:
-    1. Open the docs/_data folder.
-    2. Open the article_layout.yml file with a text editor.
-    3. Following the directions in that file, type `Your-Permalink-Here` in whichever category you wish. If you want to make a new category, follow the given layout.
-    4. Save and close the article_layout.yml file.
-  5. Open the Github for Desktop application.
-  6. When you’re ready to submit your changes, type up a commit summary in GitHub for Desktop, and click Commit. Right now, you’ve essentially told Git, “Okay, I’ve taken a snapshot of my changes!” You can continue to make more changes, and take more commit snapshots. When you’re ready to push your changes up to GitHub.com, click on the Sync button, which is right above your list of changes.
-2. Making a Pull Request:  
-At last, you’re ready to propose changes into the main project!
-  1. Go to your forked repository. It will be at: `https://github.com/<your_username>/RegenCo-op`
-  2. You’ll see a banner indicating that you’ve recently pushed a new branch, and that you can submit this branch “upstream,” to the original repository. Clicking on Compare and Pull Request sends you to a discussion page, where you can enter a title and optional description. It’s important to provide as much useful information and a rationale for why you’re making this Pull Request in the first place.
-  3. Click on Create Pull Request to propose your new article.
+   - Select the following text, and copy and paste it to your browser's address bar: `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op/compare/master...RegenCo-op:master`
+   - Replace the text `YOUR-GITHUB-USERNAME-HERE` with _your_ github username.
+   - Press the `Enter` key to begin comparing the changes between the website and your forked repository.
+   - If it says "**There isn't anything to compare.**", skip to step 2, otherwise click the button that says "**Create pull request**".
+   - Give your pull request the title "**Update**" and click "**Create pull request**".
+   - Now you can click the "**Merge pull request**" button to bring your repository up to date with the master repository.
+
+2. ### Making a topic branch:
+   
+   A topic branch is a short-lived branch that we will create and use for a single article, to make it easier to see what changes were made.
+
+   1. Go to your forked repository. It can be found here:  
+      `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op`
+   2. Click on the button that says "Branch: **master**".
+   3. In the input box, type in the permalink text: `Your-Permalink-Here`
+   4. Click the "Create branch:..." button.
+   
+3. ### Making and Pushing Changes:
+   
+   Now we will add our article and images folder (if you used images) to GitHub.  
+   **_Note:_ Make sure your branch is on the one you created earlier during each step of this process.**
+
+   1. #### Upload the article file:
+
+      1. Open the "**docs**" folder.
+      2. Open the "**_articles**" folder.
+      3. Click the "**Upload files**" button in the top right.
+      4. Drag and drop the article file to the grey box that says "**Drag additional files here to add them to the repository**"
+      5. The article filename should appear under the grey box.
+      6. Scroll down and click the "**Commit changes**" button at the bottom.
+
+   2. #### Upload the images folder:
+
+      **Note:** Skip to the next step if you had no images.
+   
+      1. Open the "**docs**" folder.
+      2. Open the "**images**" folder.
+      3. Click the "**Upload files**" button in the top right.
+      4. Drag and drop **_the image folder itself_** to the grey box that says "**Drag additional files here to add them to the repository**"
+      5. The image's filenames should appear under the grey box.
+      6. Scroll down and click the "**Commit changes**" button at the bottom.
+
+   3. #### Edit the article layout:
+      
+      1. Open the "**docs**" folder.
+      2. Open the "**_data**" folder.
+      3. Click the "**article_layout.yml**" file.
+      4. Click the little pencil icon in the upper right.
+      5. Following the directions and the layout in that file, type `Your-Permalink-Here` in whichever category you wish. If you want to make a new category, follow the given layout.
+      6. Scroll down and click the "**Commit changes**" button at the bottom.
+
+4. ### Making a Pull Request:  
+
+   At last, you’re ready to propose your article to the website!
+
+   1. You should see a banner indicating that you’ve recently pushed a new branch (the one you made earlier).
+   2. Click on the "**Compare & Pull Request**" button in the upper right to send you to a discussion page, where you can enter a title and optional description. It’s important to provide as much useful information and a rationale for why you’re writing you article in the first place.
+   3. Click on Create Pull Request to propose your new article.
+   4. Members will review your article and provide feedback before it gets published.

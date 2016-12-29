@@ -35,7 +35,7 @@ As a non-member, you are allowed to [make comments](#making-comments), [suggest 
   
   If you wish to propose a new article, we allow both members and non-members to do so. Articles are reviewed by members before being published on the website; furthermore, articles by non-members are reviewed with more scrutiny.
 
-  Please follow the guide on [How to Write a New Article](#todo) for more information.
+  Please follow the guide on [How to Write a New Article](/info/How-to-Write-a-New-Article) for more information.
 
 - ## Funding the Co-operative:
   
