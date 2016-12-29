@@ -21,22 +21,22 @@ Before you start writing the article, it is recommended that you read the [artic
 2. ### Open the file from step 1 in your favorite Markdown editor.  
    **Note:** A good online editor is [StackEdit](https://stackedit.io/editor), and from now on we will assume you are using that editor for the purposes of this guide:
    
-   - Using Stack Edit, for example, click on the "**#**" in the upper left corner.
-   - Then click on "import from disk".
-   - Then click "browse" and open the file from step 1.
+   1. Using Stack Edit, for example, click on the "**#**" in the upper left corner.
+   2. Click on "import from disk".
+   3. Click "browse" and open the file from step 1.
 
 3. ### Write the article: **Do not worry about pictures for now.**
    
    1. #### Fill out the top section:
       
-      - **Ignore the first line that says layout: article**
-      - Delete the text that says "Article Title Goes Here" and fill it in with your article's title.
-      - Delete the text that says "Unique-Article-Permalink-Goes-Here" and replace it with a phrase that is unique.  
+      1. **Ignore the first line that says layout: article**
+      2. Delete the text that says "Article Title Goes Here" and fill it in with your article's title.
+      3. Delete the text that says "Unique-Article-Permalink-Goes-Here" and replace it with a phrase that is unique.  
         **No spaces are allowed. Only letters (a-z), numbers (0-9), and hyphens (-) are allowed**.  
         The easiest thing would be your article's title, replacing the spaces with hyphens (-). For example: using the title: `My Article Title`, one would choose a permalink: `My-Article-Title`.  
         The most important thing is that it **doesn't share a permalink with another article**.  
         **_Make a note of what you typed here, as we will use it later, as follows:_** `Your-Permalink-Here`
-      - **Most articles should leave the _comments: true_ section alone.**
+      4. **Most articles should leave the _comments: true_ section alone.**
 
    2. #### Write the content:  
       Now you can start writing your article after the last line with the three hyphens (`---`).
@@ -47,9 +47,9 @@ Before you start writing the article, it is recommended that you read the [artic
 
    3. #### Save the article:
      
-      - Using Stack Edit, for example, click on the "**#**" in the upper left corner.
-      - Click the "**Export to disk**" button.
-      - Click the "As markdown" button.
+      1. Using Stack Edit, for example, click on the "**#**" in the upper left corner.
+      2. Click the "**Export to disk**" button.
+      3. Click the "As markdown" button.
 
    4. #### Rename the article:
       Using the same permalink text you used in step 3, rename the article. It will look like this:  
@@ -70,9 +70,10 @@ Before you start writing the article, it is recommended that you read the [artic
    2. #### Insert the images into the document:  
       **Note: _Images you use here won't appear in any previews_**
       
-      1. Using the markdown format, insert the images into the article wherever you want. The format you use will look like this: `![image description](/images/Your-Permalink-Here/Your-Image-Here.ext)`
-      2. Make sure to replace `Your-Permalink-Here` with the same permalink text you used in step 3.
-      3. Make sure to replace `Your-Image-Here.ext` with the image filename, and **don't forget to use the right filename extension**.
+      - Using the markdown format, insert the images into the article wherever you want. The format you use will look like this: `![image description](/images/Your-Permalink-Here/Your-Image-Here.ext)`  
+        
+        **Note:** Make sure to replace `Your-Permalink-Here` with the same permalink text you used in step 3.  
+        **Note:** Make sure to replace `Your-Image-Here.ext` with the image filename, and **don't forget to use the right filename extension**.
 
 ***
 
@@ -98,12 +99,12 @@ By now you should have your article written and named: `Your-Permalink-Here.md` 
 1. ### Updating your fork:  
    As people make changes to the main repository, your fork will become out of date. Follow these steps to keep your fork updated:
    
-   - Select the following text, and copy and paste it to your browser's address bar: `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op/compare/master...RegenCo-op:master`
-   - Replace the text `YOUR-GITHUB-USERNAME-HERE` with _your_ github username.
-   - Press the `Enter` key to begin comparing the changes between the website and your forked repository.
-   - If it says "**There isn't anything to compare.**", skip to step 2, otherwise click the button that says "**Create pull request**".
-   - Give your pull request the title "**Update**" and click "**Create pull request**".
-   - Now you can click the "**Merge pull request**" button to bring your repository up to date with the master repository.
+   1. Select the following text, and copy and paste it to your browser's address bar: `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op/compare/master...RegenCo-op:master`
+   2. Replace the text `YOUR-GITHUB-USERNAME-HERE` with _your_ github username.
+   3. Press the `Enter` key to begin comparing the changes between the website and your forked repository.
+   4. If it says "**There isn't anything to compare.**", skip to step 2, otherwise click the button that says "**Create pull request**".
+   5. Give your pull request the title "**Update**" and click "**Create pull request**".
+   6. Now you can click the "**Merge pull request**" button to bring your repository up to date with the master repository.
 
 2. ### Making a topic branch:
    
