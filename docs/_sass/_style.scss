@@ -207,10 +207,7 @@ article {
         padding:5px 5px;
         background: $light-blue;
         @include box-shadow(0 1px 6px 1px $dark-brown);
-        
-        &>p{
-            //text-indent: 1em;
-        }
+
         .center{
             text-align:center;
         }
@@ -258,6 +255,38 @@ article {
             &.light{
                 color:$light-gold;
             }
+        }
+
+        ol{
+            counter-reset: item;
+            h2, h3, h4, h5{
+                display: inline-block;
+                margin: 0;
+            }
+        }
+        ol > li{
+            display: block;
+            position: relative;
+            margin-top: 2px;
+        }
+        ol > li:before{
+            content: counters(item, ".") ") "; 
+            counter-increment: item;
+            position:absolute;
+            right: 100%;
+            margin: 0 7px 0 0;
+        }
+        h3 ~ *:last-child {
+            margin-bottom: 25px;
+        }
+        h3 + *{
+            margin-top:10px;
+        }
+        h4 ~ *:last-child {
+            margin-bottom: 20px;
+        }
+        h4 + *{
+            margin-top:5px;
         }
     }
 }
@@ -571,7 +600,7 @@ article {
             .current{
                 position: relative;
                 &:before{
-                    bottom:50%;                    
+                    bottom:50%;
                     border-top: 1em solid transparent;
                     border-right: 30px solid $selected-color;
                 }
