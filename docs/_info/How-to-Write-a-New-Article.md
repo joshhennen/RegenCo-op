@@ -75,7 +75,7 @@ Before you start writing the article, it is recommended that you read the [artic
       
       - Using the markdown format, insert the images into the article wherever you want. The format you use will look like this: `![image description](/images/Your-Permalink-Here/Your-Image-Here.ext)`  
         
-        **Note:** Make sure to replace `Your-Permalink-Here` with the same permalink text you used in step 3.  
+        **Note:** Make sure to replace `Your-Permalink-Here` with the same permalink text you used in step 3.1.3.  
         **Note:** Make sure to replace `Your-Image-Here.ext` with the image filename, and **don't forget to use the right filename extension**.
 
 ***
@@ -111,20 +111,24 @@ By now you should have your article written and named: `Your-Permalink-Here.md` 
 
 2. ### Making a topic branch:
    
-   A topic branch is a short-lived branch that we will create and use for a single article, to make it easier to see what changes were made. It is important to make a new branch whenever we want to make changes; otherwise it can be a hassle to keep our fork up-to-date with the main repository.
+   A topic branch is a short-lived branch that we will create and use for a single article or group of changes, to make it easier to see what changes were made. It is important to make a new branch whenever we want to make changes to a repository; otherwise it can be a hassle to keep our fork up-to-date with the main repository.
 
    1. Go to your forked repository. It can be found here:  
       `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op`
    2. Click on the button that says "Branch: **master**".
    3. In the input box, type in the permalink text: `Your-Permalink-Here`
    4. Click the "Create branch:..." button.
+   5. The button should now say "Branch: **Your-Permalink-Here**".
    
 3. ### Making and Pushing Changes:
    
    Now we will add our article and images folder (if you used images) to GitHub.  
 
    1. #### Edit the article layout:  
-      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "**Branch: Your-Permalink-Here**". If it does not say that, click it and change it.
+      
+      This is where you article will be located in the navigation bar.  
+      
+      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "Branch: **Your-Permalink-Here**". If it does not say that, click it and change it.
       
       1. Open the "**docs**" folder.
       2. Open the "**_data**" folder.
@@ -132,12 +136,12 @@ By now you should have your article written and named: `Your-Permalink-Here.md` 
       4. Click the little pencil icon in the upper right.
       5. Following the directions and the layout in that file, type `Your-Permalink-Here` in whichever category you wish. If you want to make a new category, follow the given layout.
       6. Scroll down and click the "**Commit changes**" button at the bottom.
-      7. Next to the button that says "**Branch: Your-Permalink-Here**", click the text that says "**RegenCo-op**" to be taken back to the main page.
+      7. Next to the button that says "Branch: **Your-Permalink-Here**", click the text that says "**RegenCo-op**" to be taken back to the main page.
 
    2. #### Upload the images folder:
-
+      
       **_Note:_** Skip to the next step if you had no images.  
-      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "**Branch: Your-Permalink-Here**". If it does not say that, click it and change it.
+      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "Branch: **Your-Permalink-Here**". If it does not say that, click it and change it.
       
       1. Open the "**docs**" folder.
       2. Open the "**images**" folder.
@@ -148,7 +152,8 @@ By now you should have your article written and named: `Your-Permalink-Here.md` 
       6. Scroll down and click the "**Commit changes**" button at the bottom.
 
    3. #### Upload the article file:  
-      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "**Branch: Your-Permalink-Here**". If it does not say that, click it and change it.
+      
+      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "Branch: **Your-Permalink-Here**". If it does not say that, click it and change it.
       
       1. Open the "**docs**" folder.
       2. Open the "**_articles**" folder.
