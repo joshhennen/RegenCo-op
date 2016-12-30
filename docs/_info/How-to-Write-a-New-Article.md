@@ -46,15 +46,17 @@ Before you start writing the article, it is recommended that you read the [artic
       - Keep in mind the [article formatting guidelines](/info/Article-Formatting-Guidelines).
       - Also remember to refer to the [Kramdown reference guide](https://kramdown.gettalong.org/quickref.html) if the text isn't formatting the way you want it to.
 
-   3. #### Save the article:
+   3. #### Rename the article:
+      
+      1. Using Stack Edit, click on the text in the upper right that says `ArticleTemplate`.
+      2. Using the same permalink text you used in step 3, rename the article. It will look like this:  
+      `Your-Permalink-Here`
+
+   4. #### Save the article:
      
       1. Using Stack Edit, for example, click on the "**#**" in the upper left corner.
       2. Click the "**Export to disk**" button.
       3. Click the "As markdown" button.
-
-   4. #### Rename the article:
-      Using the same permalink text you used in step 3, rename the article. It will look like this:  
-      `Your-Permalink-Here.md`
 
 4. ### Using images:  
    **Note:** Skip to the next step if you _do not_ want to use any pictures.
