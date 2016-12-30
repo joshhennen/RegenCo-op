@@ -83,7 +83,7 @@ Before you start writing the article, it is recommended that you read the [artic
 ## Make a New Fork
 {: .center .dark .teal}
 
-**Note:** You only need to follow these steps one time; In the future you can[skip to the next section](#submit-your-article-to-github).
+**Note:** You only need to follow these steps one time; In the future you can [skip to the next section](#submit-your-article-to-github).
 
 1. Either [sign into github](https://github.com/login) or [make a new account](https://github.com/join).
 2. Go to the [RegenCo-op repository on GitHub](https://github.com/RegenCo-op/RegenCo-op).
