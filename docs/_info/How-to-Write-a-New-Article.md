@@ -122,35 +122,39 @@ By now you should have your article written and named: `Your-Permalink-Here.md` 
 3. ### Making and Pushing Changes:
    
    Now we will add our article and images folder (if you used images) to GitHub.  
-   **_Note:_ Make sure your branch is on the one you created earlier during each step of this process.**
 
-   1. #### Upload the article file:
-
-      1. Open the "**docs**" folder.
-      2. Open the "**_articles**" folder.
-      3. Click the "**Upload files**" button in the top right.
-      4. Drag and drop the article file to the grey box that says "**Drag additional files here to add them to the repository**"
-      5. The article filename should appear under the grey box.
-      6. Scroll down and click the "**Commit changes**" button at the bottom.
-
-   2. #### Upload the images folder:
-
-      **Note:** Skip to the next step if you had no images.
-   
-      1. Open the "**docs**" folder.
-      2. Open the "**images**" folder.
-      3. Click the "**Upload files**" button in the top right.
-      4. Drag and drop **_the image folder itself_** to the grey box that says "**Drag additional files here to add them to the repository**"
-      5. The image's filenames should appear under the grey box.
-      6. Scroll down and click the "**Commit changes**" button at the bottom.
-
-   3. #### Edit the article layout:
+   1. #### Edit the article layout:  
+      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "**Branch: Your-Permalink-Here**. If it does not say that, click it and change it.
       
       1. Open the "**docs**" folder.
       2. Open the "**_data**" folder.
       3. Click the "**article_layout.yml**" file.
       4. Click the little pencil icon in the upper right.
       5. Following the directions and the layout in that file, type `Your-Permalink-Here` in whichever category you wish. If you want to make a new category, follow the given layout.
+      6. Scroll down and click the "**Commit changes**" button at the bottom.
+      7. Next to the button that says "**Branch: Your-Permalink-Here**", click the text that says "**RegenCo-op**" to be taken back to the main page.
+
+   2. #### Upload the images folder:
+
+      **_Note:_** Skip to the next step if you had no images.  
+      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "**Branch: Your-Permalink-Here**. If it does not say that, click it and change it.
+      
+      1. Open the "**docs**" folder.
+      2. Open the "**images**" folder.
+      3. Click the "**Upload files**" button in the top right.
+      4. Drag and drop **_the image folder itself_** to the grey box that says "**Drag additional files here to add them to the repository**"  
+         **_Note:_** It is important to **_drag and drop the image folder itself_**, rather than click the "**choose your files**" link; This is so the folder structure gets uploaded to github.
+      5. The image's filenames should appear under the grey box.
+      6. Scroll down and click the "**Commit changes**" button at the bottom.
+
+   3. #### Upload the article file:  
+      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "**Branch: Your-Permalink-Here**. If it does not say that, click it and change it.
+      
+      1. Open the "**docs**" folder.
+      2. Open the "**_articles**" folder.
+      3. Click the "**Upload files**" button in the top right.
+      4. Drag and drop the article file to the grey box that says "**Drag additional files here to add them to the repository**"
+      5. The article filename should appear under the grey box.
       6. Scroll down and click the "**Commit changes**" button at the bottom.
 
 4. ### Making a Pull Request:  
