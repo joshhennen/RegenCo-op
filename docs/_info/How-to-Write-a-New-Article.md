@@ -49,7 +49,7 @@ Before you start writing the article, it is recommended that you read the [artic
    3. #### Rename the article:
       
       1. Using Stack Edit, click on the text in the upper right that says `ArticleTemplate`.
-      2. Using the same permalink text you used in step 3, rename the article. It will look like this:  
+      2. Using the same permalink text you used in step 3.1.3, rename the article. It will look like this:  
       `Your-Permalink-Here`
 
    4. #### Save the article:
@@ -59,7 +59,7 @@ Before you start writing the article, it is recommended that you read the [artic
       3. Click the "As markdown" button.
 
 4. ### Using images:  
-   **Note:** Skip to the next step if you _do not_ want to use any pictures.
+   **Note:** [Skip to the next step](#make-a-new-fork) if you _do not_ want to use any pictures.
    
    1. #### Prepare the images:
       
@@ -83,7 +83,7 @@ Before you start writing the article, it is recommended that you read the [artic
 ## Make a New Fork
 {: .center .dark .teal}
 
-**Note:** You only need to follow these steps one time; In the future you can skip to the [next section](#submit-your-article-to-github).
+**Note:** You only need to follow these steps one time; In the future you can[skip to the next section](#submit-your-article-to-github).
 
 1. Either [sign into github](https://github.com/login) or [make a new account](https://github.com/join).
 2. Go to the [RegenCo-op repository on GitHub](https://github.com/RegenCo-op/RegenCo-op).
@@ -105,7 +105,7 @@ By now you should have your article written and named: `Your-Permalink-Here.md` 
    1. Select the following text, and copy and paste it to your browser's address bar: `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op/compare/master...RegenCo-op:master`
    2. Replace the text `YOUR-GITHUB-USERNAME-HERE` with _your_ github username.
    3. Press the `Enter` key to begin comparing the changes between the website and your forked repository.
-   4. If it says "**There isn't anything to compare.**", skip to step 2, otherwise click the button that says "**Create pull request**".
+   4. If it says "**There isn't anything to compare.**", [skip to the next step](#making-a-topic-branch); otherwise click the button that says "**Create pull request**".
    5. Give your pull request the title "**Update**" and click "**Create pull request**".
    6. Now you can click the "**Merge pull request**" button to bring your repository up to date with the master repository.
 
@@ -140,7 +140,7 @@ By now you should have your article written and named: `Your-Permalink-Here.md` 
 
    2. #### Upload the images folder:
       
-      **_Note:_** Skip to the next step if you had no images.  
+      **_Note:_** [Skip to the next step](#upload-the-article-file) if you had no images.  
       **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "Branch: **Your-Permalink-Here**". If it does not say that, click it and change it.
       
       1. Open the "**docs**" folder.
