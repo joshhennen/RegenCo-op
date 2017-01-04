@@ -49,7 +49,7 @@ Before you start writing the article, it is recommended that you read the [artic
    3. #### Rename the article:
       
       1. Using Stack Edit, click on the text in the upper right that says `ArticleTemplate`.
-      2. Using the same permalink text you used in step 3, rename the article. It will look like this:  
+      2. Using the same permalink text you used in step 3.1.3, rename the article. It will look like this:  
       `Your-Permalink-Here`
 
    4. #### Save the article:
@@ -59,23 +59,22 @@ Before you start writing the article, it is recommended that you read the [artic
       3. Click the "As markdown" button.
 
 4. ### Using images:  
-   **Note:** Skip to the next step if you _do not_ want to use any pictures.
+   **Note:** [Skip to the next step](#make-a-new-fork) if you _do not_ want to use any pictures.
    
    1. #### Prepare the images:
       
       1. Make sure pictures you want to use are copyright free or are your own original work.
       2. Rename the files so that they **do not contain any spaces**.
-      3. Make sure the files are .jpeg, .png, .gif, or .svg format (you can use this [online converter](http://image.online-convert.com/convert-to-jpg) if they are not).
-      4. [Compress the files here](https://compressor.io/). Compressed images make the page load faster and improve user experience for people with a slow internet connection.
-      5. Put all the images you want to use in a folder on your desktop. Rename the folder the same as your permalink:  
+      3. Make sure the files are .jpg, .png, .gif, or .svg format (you can use this [online converter](http://image.online-convert.com/convert-to-jpg) if they are not).
+      4. Put all the images you want to use in a folder on your desktop. Rename the folder the same as your permalink:  
 `Your-Permalink-Here`
-
+   
    2. #### Insert the images into the document:  
       **Note: _Images you use here won't appear in any previews_**
       
       - Using the markdown format, insert the images into the article wherever you want. The format you use will look like this: `![image description](/images/Your-Permalink-Here/Your-Image-Here.ext)`  
         
-        **Note:** Make sure to replace `Your-Permalink-Here` with the same permalink text you used in step 3.  
+        **Note:** Make sure to replace `Your-Permalink-Here` with the same permalink text you used in step 3.1.3.  
         **Note:** Make sure to replace `Your-Image-Here.ext` with the image filename, and **don't forget to use the right filename extension**.
 
 ***
@@ -83,7 +82,7 @@ Before you start writing the article, it is recommended that you read the [artic
 ## Make a New Fork
 {: .center .dark .teal}
 
-**Note:** You only need to follow these steps one time; In the future you can skip to the [next section](#submit-your-article-to-github).
+**Note:** You only need to follow these steps one time; In the future you can [skip to the next section](#submit-your-article-to-github).
 
 1. Either [sign into github](https://github.com/login) or [make a new account](https://github.com/join).
 2. Go to the [RegenCo-op repository on GitHub](https://github.com/RegenCo-op/RegenCo-op).
@@ -105,52 +104,61 @@ By now you should have your article written and named: `Your-Permalink-Here.md` 
    1. Select the following text, and copy and paste it to your browser's address bar: `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op/compare/master...RegenCo-op:master`
    2. Replace the text `YOUR-GITHUB-USERNAME-HERE` with _your_ github username.
    3. Press the `Enter` key to begin comparing the changes between the website and your forked repository.
-   4. If it says "**There isn't anything to compare.**", skip to step 2, otherwise click the button that says "**Create pull request**".
+   4. If it says "**There isn't anything to compare.**", [skip to the next step](#making-a-topic-branch); otherwise click the button that says "**Create pull request**".
    5. Give your pull request the title "**Update**" and click "**Create pull request**".
    6. Now you can click the "**Merge pull request**" button to bring your repository up to date with the master repository.
 
 2. ### Making a topic branch:
    
-   A topic branch is a short-lived branch that we will create and use for a single article, to make it easier to see what changes were made.
+   A topic branch is a short-lived branch that we will create and use for a single article or group of changes, to make it easier to see what changes were made. It is important to make a new branch whenever we want to make changes to a repository; otherwise it can be a hassle to keep our fork up-to-date with the main repository.
 
    1. Go to your forked repository. It can be found here:  
       `https://github.com/YOUR-GITHUB-USERNAME-HERE/RegenCo-op`
    2. Click on the button that says "Branch: **master**".
    3. In the input box, type in the permalink text: `Your-Permalink-Here`
    4. Click the "Create branch:..." button.
+   5. The button should now say "Branch: **Your-Permalink-Here**".
    
 3. ### Making and Pushing Changes:
    
    Now we will add our article and images folder (if you used images) to GitHub.  
-   **_Note:_ Make sure your branch is on the one you created earlier during each step of this process.**
 
-   1. #### Upload the article file:
-
-      1. Open the "**docs**" folder.
-      2. Open the "**_articles**" folder.
-      3. Click the "**Upload files**" button in the top right.
-      4. Drag and drop the article file to the grey box that says "**Drag additional files here to add them to the repository**"
-      5. The article filename should appear under the grey box.
-      6. Scroll down and click the "**Commit changes**" button at the bottom.
-
-   2. #### Upload the images folder:
-
-      **Note:** Skip to the next step if you had no images.
-   
-      1. Open the "**docs**" folder.
-      2. Open the "**images**" folder.
-      3. Click the "**Upload files**" button in the top right.
-      4. Drag and drop **_the image folder itself_** to the grey box that says "**Drag additional files here to add them to the repository**"
-      5. The image's filenames should appear under the grey box.
-      6. Scroll down and click the "**Commit changes**" button at the bottom.
-
-   3. #### Edit the article layout:
+   1. #### Edit the article layout:  
+      
+      This is where you article will be located in the navigation bar.  
+      
+      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "Branch: **Your-Permalink-Here**". If it does not say that, click it and change it.
       
       1. Open the "**docs**" folder.
       2. Open the "**_data**" folder.
       3. Click the "**article_layout.yml**" file.
       4. Click the little pencil icon in the upper right.
       5. Following the directions and the layout in that file, type `Your-Permalink-Here` in whichever category you wish. If you want to make a new category, follow the given layout.
+      6. Scroll down and click the "**Commit changes**" button at the bottom.
+      7. Next to the button that says "Branch: **Your-Permalink-Here**", click the text that says "**RegenCo-op**" to be taken back to the main page.
+
+   2. #### Upload the images folder:
+      
+      **_Note:_** [Skip to the next step](#upload-the-article-file) if you had no images.  
+      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "Branch: **Your-Permalink-Here**". If it does not say that, click it and change it.
+      
+      1. Open the "**docs**" folder.
+      2. Open the "**images**" folder.
+      3. Click the "**Upload files**" button in the top right.
+      4. Drag and drop **_the image folder itself_** to the grey box that says "**Drag additional files here to add them to the repository**"  
+         **_Note:_** It is important to **_drag and drop the image folder itself_**, rather than click the "**choose your files**" link; This is so the folder structure gets uploaded to github.
+      5. The image's filenames should appear under the grey box.
+      6. Scroll down and click the "**Commit changes**" button at the bottom.
+
+   3. #### Upload the article file:  
+      
+      **_Note:_** Make sure your branch is on the one you created earlier. There should be a button that says "Branch: **Your-Permalink-Here**". If it does not say that, click it and change it.
+      
+      1. Open the "**docs**" folder.
+      2. Open the "**_articles**" folder.
+      3. Click the "**Upload files**" button in the top right.
+      4. Drag and drop the article file to the grey box that says "**Drag additional files here to add them to the repository**"
+      5. The article filename should appear under the grey box.
       6. Scroll down and click the "**Commit changes**" button at the bottom.
 
 4. ### Making a Pull Request:  
