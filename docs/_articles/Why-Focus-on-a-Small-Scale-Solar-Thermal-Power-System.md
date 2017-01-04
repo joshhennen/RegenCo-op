@@ -1,8 +1,6 @@
 ---
-layout: article
 title: Why Focus on a Small Scale Solar Thermal Power System
 permalink: /Why-Focus-on-a-Small-Scale-Solar-Thermal-Power-System
-comments: true
 ---
 The reasons for scaling the system to this size and the utilization of solar thermal are many. The first consideration is what is the current demand for energy and where is that demand most valued, what are we not willing to give up easily in the name of environmental responsibility? These things are abundant clean water, abundant healthy and delicious food, abundant healthy and comfortable living spaces, safe and expedient transportation, and the access to global information and communication. We have found ways that may be able to provide these desires in a environmentally responsible way. 
 
