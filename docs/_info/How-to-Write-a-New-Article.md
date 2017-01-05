@@ -51,10 +51,12 @@ Before you start writing the article, it is recommended that you read the [artic
       `Your-Permalink-Here`
 
    4. #### Save the article:
-     
+      **Note:** If you want to use images, [skip to the Using images step](#using-images), then come back here.
+   
       1. Using Stack Edit, for example, click on the "**#**" in the upper left corner.
       2. Click the "**Export to disk**" button.
       3. Click the "As markdown" button.
+      4. Save the file on your desktop.
 
 4. ### Using images:  
    **Note:** [Skip to the next step](#make-a-new-fork) if you _do not_ want to use any pictures.
