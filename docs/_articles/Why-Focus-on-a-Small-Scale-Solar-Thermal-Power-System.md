@@ -65,3 +65,149 @@ There are many benefits of it being a thermal system. The first is that the heat
 The heat can be used directly for things such as space heating, domestic hot water, cooking, clothes drying etc. The heat can also be converted in a Stirling engine to motive power to run an electric generator and to run machinery such as pumps, grain mills, tool machines, etc. The heat can even be converted to refrigeration through the use of absorptive coolers and / or by running a second Stirling engine in addition to the first.
 
 The system can still be tied to the electric grid to both receive power if needed and to supply excess power to others. This leads to a very different kind of energy economy where each house or business gives or receives power as needed. Essentially it turns energy from an expense into an asset.  For similar and other opinions see this web site: [homegrown green energy is making power utilities irrelevant](http://www.businessweek.com/articles/2013-08-22/homegrown-green-energy-is-making-power-utilities-irrelevant)
+
+
+The REGENCO-OP is investigating the following design characteristics of the system:
+
+* Design Mantra
+ * Clean Water, Healthy Food, Comfortable Homes, Connected Communities, Responsible Energy
+
+* Increase Building Energy Efficiency First!
+ * The more energy efficient the building the smaller the system required to meet its needs
+ * Retrofit existing homes using a very careful cost / benefit analysis.
+ * Design new homes taking into consideration all variables that affect efficiency  
+
+* Safety
+ *  The system requires the use of fluids at high temperatures and pressures. 
+ * The design must be able to handle leaks is such a way as to prevent injury and property damage.
+ * Automatic mechanical pressure relief and overflow protection
+ * Alarm system to notify occupants of dangerous conditions 
+
+* System Management 
+    *  Thermostatically controlled and manually monitored and/or simple electronic control and monitoring with the ability for computer interface. 
+    *  Different management strategies available for varying levels of access to computers or desired level of automation.  
+
+* Modular and Scaleable
+ * Individual components sized for "human scale" with the minimal need for large facilities or heavy equipment for manufacture or installation.
+ * Combining components into modules that are fully integrated and there is the minimal of over or under capacity 
+ * Modules are combined to increase capacity.
+
+* Combined Functions of Components
+ * Waste  from one process utilized in another process
+ * Integration of water storage, aquaponics, solar thermal collector,  thermal buffer and fresh air supply to the home
+
+* Simple Construction
+ * The minimum of high tech processes required for the manufacture of the components of the system.
+ * Maximum utilization of "off the shelf" components. 
+ 
+* Long Service Life
+ * Design that takes into consideration the easy replacement of wear or damage prone components.
+ * Finding the best balance between maximum durability and resource efficient production 
+ 
+* High Recyclability
+ * The minimal use of components made of difficult to repurpose composite construction. 
+ * Design flexibility that allows the use of reclaimed materials as much as possible
+
+* Ecological Impact and Sustainability Evaluation of:
+ * Raw materials 
+ * Manufacturing processes
+ * Installation
+ * Operation
+ * Maintenance
+ * Replacement
+
+* Completely Open Source.
+ * We actively encourage all designs to be freely used and modified by anyone. 
+ * We do ask that you attribute the original designer 
+ * If the design is put into production no patents, copyrights or any other legal instrument be used to prevent others from using the design. 
+ * If produced we would also appreciate feedback as to the effectiveness of the design.  
+
+* How We Use Energy 
+  All energy usage needs to be Identified and the quantity of energy required needs to be calculated.  
+   * Eating Food 
+  * Hot Thermal Processes
+      * 130-200 Deg. C (266-392 Deg. F) Conversion into Mechanical (see Mechanical below) and then Electric Generation (see Electricity below)
+      * 100-230 Deg. C (212-446 Deg. F) Cooking
+      * 100 Deg. C + (212 Deg. F +) Water Purification
+      * 45-100 Deg. C (113-212 Deg. F) Hot Water
+      * 20-45 Deg. C (68-113 Deg. F) Living Space Heating
+      * 5-30 Deg. C (41-86 Deg. F Greenhouse Heating
+     
+ * Cold Thermal Processes
+     * Below 0 Deg. C (32 Deg. F) Freezer
+     * 0-4 Deg. C (32-39 Deg. F) Refrigeration
+     * 4-10 Deg. C (39-50 Deg.  F) Root Cellar
+     * 10-25 Deg. C (50-77 Deg. F) Air Conditioning
+
+ * Mechanical 
+     * Pumps
+     * Fans
+     * Transportation
+     * Machine Tools
+     * Grain Mills and Food Processors
+     *  Any Other Machinery
+   
+   * Electricity
+     *  Lighting
+     * Communication
+     * Computers
+     * Motors (see Mechanical above)
+     * Sensing and Control Systems
+
+* How Energy is Collected, Harvested and Extracted
+What are the ways we can get energy and what are the advantages and disadvantages of each one?
+ * Harvesting Food
+ * Solar 
+     * Photovoltaic
+     * Thermal
+          * Non-Concentrating
+          * Concentrating
+ *  Biogas burners
+ *  Biochar Reactors
+ *  Wind 
+     *  Viscous Heaters
+     *  Stirling Cycle Heat Pumps 
+     *  Electric Generators
+ *  Solar Thermal Pyrolysis of  Waste Oil,Trash and Biomass:
+     * Fractional distillation and catalyst reactors to extract useful chemicals.
+     *  The subsequent burning of light gases to provide heat input into the system.
+   * Geothermal Wells
+    * Integration Into Existing Infrastructure:
+     *  Electric heaters
+     * Natural Gas burners
+     * Propane burners
+     * Waste Oil burners
+     * Waste Heat from generator and pump engines. 
+     * Waste Heat from other industrial processes
+ 
+* Energy Conversion and Transmission Mechanisms
+     * Growing Food
+     * Pumps
+     * Fans
+     *  Thermal Transfer Fluids
+      * Hot, above 100 C
+      * Cold, below 0 C 
+     * Vacuum Insulated  Thermal Transfer Fluid Pipes
+     * Heat Exchangers
+     * Stirling Engines
+     * Stirling Heat Pumps 
+     * Absorptive Coolers
+     * Belts
+     * Shafts
+     * Electric Generators
+     * Wires
+     
+* Methods of Energy Storage
+
+ * Food Preservation Methods
+ * Thermal Storage
+     * Hot, above average ambient temperature
+     * Cold, below average ambient temperature   
+ * Ecological Electric Storage
+ * Compressed Air
+ * Gas fuels from pyrolysis and bioreactors 
+ * Liquid fuels produced from  pyrolysis of plastics or biomass, Biochar production, biodiesel, biogasoline, liquid ammonia  and solar thermal decomposition of steam.
+ * Biomass
+     *  Wood 
+     * Hay
+     *  Algae
